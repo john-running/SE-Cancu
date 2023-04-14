@@ -1,0 +1,64 @@
+composition:
+  _name: lars demo 1
+  _id: 548fed1a-e4e5-4500-942b-1c455895fa36
+  _slug: lars-demo-1
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Hey there
+  slots:
+    content:
+      - _id: 95822d37-bc35-4769-9697-05d5edf1e574
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: We have coffee for you
+          backgroundImage:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1656096296/JavaDrip/heros/Categories/Beans.webp
+                ratio: '16:9'
+                width: '2600'
+                format: webp
+                height: '1300'
+                widths: 300,500,800
+                caption: ''
+                options: ''
+                version: 1656096296
+                publicId: JavaDrip/heros/Categories/Beans
+                createdAt: '2022-06-24T18:44:56Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/Beans.webp
+                resourceType: image
+                transformation: ''
+                globalImageOptions: ''
+      - _id: 6ca0f8e7-4953-4584-a2fb-38bcee5b2448
+        type: featuredProducts
+        parameters:
+          title:
+            type: text
+            value: We have beans for you
+          sortBy:
+            type: select
+            value: price
+          category:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 2iBQnVCClBgENtLRSu2WWO
+          addToCart:
+            type: checkbox
+            value: true
+          sortOrder:
+            type: select
+            value: desc
+          productDisplayLimit:
+            type: number
+            value: '3'
+created: '2023-03-13T15:10:22.890999+00:00'
+modified: '2023-03-13T15:52:41.328412+00:00'
+pattern: false

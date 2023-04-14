@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: productDetailPage
 name: Product Detail Page
 icon: shopping-bag
@@ -19,9 +21,10 @@ slots:
       - callToAction
       - $personalization
       - featuredProduct
+      - featuredProducts
     inheritAllowedComponents: false
 defaults:
   type: productDetailPage
 canBeComposition: true
 created: '2023-03-05T02:09:13.269661+00:00'
-updated: '2023-03-09T21:52:51.51428+00:00'
+updated: '2023-03-10T16:18:46.988243+00:00'

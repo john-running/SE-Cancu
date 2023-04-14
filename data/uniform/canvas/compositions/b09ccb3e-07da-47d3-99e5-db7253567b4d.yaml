@@ -1,0 +1,19 @@
+composition:
+  _name: royale-iq-espresso-machine
+  _id: b09ccb3e-07da-47d3-99e5-db7253567b4d
+  _slug: royale-iq-espresso-machine
+  type: productDetailPage
+  slots:
+    content:
+      - _id: 797ee808-3404-468e-931d-1eaa8dbf4811
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: hello Peter
+          subtitle:
+            type: text
+            value: how is it going?
+created: '2023-03-10T22:11:22.844427+00:00'
+modified: '2023-03-10T22:11:54.748391+00:00'
+pattern: false

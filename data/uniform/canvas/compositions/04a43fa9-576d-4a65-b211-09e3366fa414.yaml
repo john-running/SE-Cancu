@@ -1,0 +1,22 @@
+composition:
+  _name: Featured Coffee Makers
+  _id: 04a43fa9-576d-4a65-b211-09e3366fa414
+  type: featuredProducts
+  parameters:
+    title:
+      type: text
+      value: Featured Coffee Makers
+    sortBy:
+      type: select
+      value: price
+    category:
+      type: contentfulEntry
+      value:
+        source: default
+        entryId: 1d14hjxTrgxWJjxHGQ93fy
+    sortOrder:
+      type: select
+      value: desc
+created: '2023-03-10T16:19:53.582265+00:00'
+modified: '2023-03-10T16:19:53.582265+00:00'
+pattern: true

@@ -1,0 +1,70 @@
+composition:
+  _name: JavaDrip Specialty
+  _id: 1b0bccf5-0771-450d-9fe8-8af56b9eb4e5
+  _slug: javadrip-specialty-coffee-maker
+  type: customPdp
+  slots:
+    content:
+      - _id: 4750e245-dac0-4114-98a5-6d32ecf42c77
+        type: hero
+        _pattern: 4898f45a-0f7d-40d2-9ffd-87a10a622630
+      - _id: 96d845b0-13d3-448a-aa1c-ce6ce371eb33
+        type: sectionTwoColumns
+        slots:
+          leftContent:
+            - _id: 66d4b17c-d098-495b-8b7f-60d7a3938d30
+              type: productInfo
+            - _id: 7cebdaf8-d8f6-4936-87ae-3c6e2bca6478
+              type: addToCart
+            - _id: ce5f04d6-d243-4f21-9af9-a721f0380dcd
+              type: productDescription
+              parameters:
+                title:
+                  type: text
+                  value: Description
+          rightContent:
+            - _id: e191da95-3e38-4e58-918b-02f3ff708fe1
+              type: productImageGallery
+        parameters:
+          verticalAlignment:
+            type: select
+            value: items-center
+          leftContentColumns:
+            type: select
+            value: '5'
+          rightContentColumns:
+            type: select
+            value: '7'
+      - _id: 66830d52-4e29-48de-a12a-3dc60493c105
+        type: featuredCallout
+        variant: imageLeft
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 6JOdhT5P7HFN7HqVY7W3qO
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: 24f10a7f-d337-47c2-9d08-fa3630681cb7
+        type: featuredCallout
+        variant: imageRight
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 2UDv3wYgRiykDekTNHWG7G
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+created: '2023-03-17T14:45:30.520751+00:00'
+modified: '2023-03-17T14:51:33.225949+00:00'
+pattern: false

@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: customPdp
+name: Product Detail Page (custom)
+icon: shopping-bag
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - productDetailPageContainer
+      - container
+      - addToCart
+      - productDescription
+      - relatedProducts
+      - sectionTwoColumns
+      - hero
+      - featuredCallout
+      - accordion
+      - callToAction
+      - $personalization
+      - featuredProduct
+      - featuredProducts
+    inheritAllowedComponents: false
+defaults:
+  type: customPdp
+  slots:
+    content:
+      - type: featuredProduct
+        variant: imageLeft
+        parameters:
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+      - type: addToCart
+canBeComposition: true
+created: '2023-03-10T16:12:41.052481+00:00'
+updated: '2023-03-17T14:35:18.573246+00:00'

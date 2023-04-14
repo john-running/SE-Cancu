@@ -1,0 +1,122 @@
+composition:
+  _name: Peruvian Blend Coffee
+  _id: ac0f7bec-cfd8-48b6-94bc-a81551383ec6
+  _slug: peruvian-blend-coffee
+  type: customPdp
+  slots:
+    content:
+      - _id: 1a57e8fa-5619-4850-9920-24b57c4ae9b0
+        type: $personalization
+        slots:
+          pz:
+            - _id: 2ade4287-38a5-4dd8-914d-d154d0dc016b
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: wealthyPeopleFromSanFrancisco
+                        r: 0
+                        op: '>'
+                    name: ''
+                titleAi:
+                  type: ai-generated-text
+                  value:
+                    text: Sip SF Luxury Coffee!
+                subtitleAi:
+                  type: ai-generated-text
+                  value:
+                    text: >-
+                      Experience the finest coffee in San Francisco! Enjoy
+                      luxury blends & flavors from around the world, perfect for
+                      any indulgent occasion. #luxurySFcoffee
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1667497849/coffee-beans_sea2uw.jpg
+                      ratio: '16:9'
+                      width: '1170'
+                      format: jpg
+                      height: '780'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1667497849
+                      publicId: coffee-beans_sea2uw
+                      createdAt: '2022-11-03T17:50:49Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/coffee-beans_sea2uw.jpg
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+            - _id: 38db1979-4c30-4e96-8231-fe8a61ef3a4f
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: The best beans just for you
+                subtitle:
+                  type: text
+                  value: One espresso a day is making a great day
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1656096296/JavaDrip/heros/Categories/Beans.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1656096296
+                      publicId: JavaDrip/heros/Categories/Beans
+                      createdAt: '2022-06-24T18:44:56Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/Beans.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+        parameters:
+          trackingEventName:
+            type: text
+            value: hero p13n
+      - _id: 4a73c6c2-c442-4f42-aafb-564e9894040d
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5t766IMSvibpGO0P6dGzXu
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: 6bb1250b-7aed-4528-acf2-20920dc5eafb
+        type: addToCart
+      - _id: 8fb39259-0fd0-4c0e-8aef-85dac9ddce16
+        type: relatedProducts
+        parameters:
+          title:
+            type: text
+            value: We think you also like
+          products:
+            type: algolia-recommend
+            value:
+              index_name: Products
+              recommendOptions:
+                objectId: '134'
+                threshold: 30
+                maxRecommendations: 30
+created: '2023-03-20T20:04:42.52983+00:00'
+modified: '2023-03-20T20:09:34.92899+00:00'
+pattern: false

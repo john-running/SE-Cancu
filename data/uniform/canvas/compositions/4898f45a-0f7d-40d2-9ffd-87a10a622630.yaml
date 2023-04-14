@@ -1,0 +1,44 @@
+composition:
+  _name: Specialty Hero
+  _id: 4898f45a-0f7d-40d2-9ffd-87a10a622630
+  type: hero
+  parameters:
+    title:
+      type: text
+      value: Announcing the JavaDrip Specialty Coffee Maker
+    subtitle:
+      type: text
+      value: Our first feature packed machine that won't break your budget
+    buttonUrl:
+      type: link
+      value:
+        path: /products
+        nodeId: 1ed3c14c-4f4d-4e62-85e0-bc3e6a9a3ead
+        projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+    buttonCopy:
+      type: text
+      value: Learn More
+    backgroundImage:
+      type: cloudinary-media-selector
+      value:
+        - alt: ''
+          url: >-
+            https://res.cloudinary.com/uniformdev/image/upload/v1679063642/JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5.jpg
+          ratio: '16:9'
+          width: '1000'
+          format: jpg
+          height: '562'
+          widths: 300,500,800
+          caption: ''
+          options: ''
+          version: 1679063642
+          publicId: JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5
+          createdAt: '2023-03-17T14:34:02Z'
+          previewUrl: >-
+            https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5.jpg
+          resourceType: image
+          transformation: ''
+          globalImageOptions: ''
+created: '2023-03-17T14:51:22.426472+00:00'
+modified: '2023-03-20T13:34:03.570244+00:00'
+pattern: true

@@ -1,0 +1,27 @@
+composition:
+  _name: Kosmic Stainless Brewer
+  _id: 8b8495d9-a5c1-4aff-98ef-ed8e72681260
+  _slug: kosmic-coffee-stainless-steel-precision-brewer
+  type: customPdp
+  slots:
+    content:
+      - _id: 6f5d98ce-d273-4fc1-94f6-92e3f1a9a326
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 5OdnifOjYIzi3G15nyoDTd
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: dc972adf-c36d-444e-bb3f-a4422f017aca
+        type: addToCart
+created: '2023-03-20T12:20:01.688617+00:00'
+modified: '2023-03-20T12:20:24.719067+00:00'
+pattern: false

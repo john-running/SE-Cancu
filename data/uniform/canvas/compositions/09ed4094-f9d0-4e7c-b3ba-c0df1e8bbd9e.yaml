@@ -146,6 +146,26 @@ composition:
               instantSearchProps:
                 indexName: Products
                 stalledSearchDelay: 200
-created: '2023-03-09T02:00:50.920514+00:00'
-modified: '2023-03-09T02:24:58.707029+00:00'
+      - _id: 9b48ea24-5cc7-423d-96cd-fb2f001384bd
+        type: featuredProducts
+        parameters:
+          title:
+            type: text
+            value: International Bundle
+          sortBy:
+            type: select
+            value: price
+          category:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 7atUMyTtW3EwxyWvU57YjM
+          sortOrder:
+            type: select
+            value: asc
+          productDisplayLimit:
+            type: number
+            value: '3'
+created: '2023-03-09T02:43:59.185525+00:00'
+modified: '2023-03-10T20:24:48.375796+00:00'
 pattern: false

@@ -1,0 +1,16 @@
+id: enterpriseAccounts
+name: Enterprise Accounts
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: clb-com-met-empr
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 10K-50K
+dur: p
+description: ''
+str: 50

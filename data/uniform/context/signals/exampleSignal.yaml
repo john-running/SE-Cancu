@@ -1,0 +1,16 @@
+id: exampleSignal
+name: example signal
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: clb-com-met-empr
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 1K-5K
+dur: p
+description: ''
+str: 50

@@ -9,7 +9,10 @@ composition:
         parameters:
           link:
             type: link
-            value: /
+            value:
+              path: /
+              nodeId: d2ebcf6a-e1ca-45b2-a517-6c039f41c756
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
           title:
             type: text
             value: Home
@@ -54,7 +57,10 @@ composition:
               parameters:
                 ctaLink:
                   type: link
-                  value: /shop/coffee-makers
+                  value:
+                    path: /search
+                    nodeId: ea1ef15d-80da-484c-aded-15bca38505db
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
                 ctaText:
                   type: text
                   value: SEE ALL
@@ -109,7 +115,10 @@ composition:
               parameters:
                 ctaLink:
                   type: link
-                  value: /shop/beans
+                  value:
+                    path: /search
+                    nodeId: ea1ef15d-80da-484c-aded-15bca38505db
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
                 ctaText:
                   type: text
                   value: SEE ALL
@@ -139,5 +148,5 @@ composition:
             type: select
             value: default
 created: '2023-03-05T02:09:22.856688+00:00'
-modified: '2023-03-09T23:29:27.162537+00:00'
+modified: '2023-03-10T19:28:15.487279+00:00'
 pattern: true

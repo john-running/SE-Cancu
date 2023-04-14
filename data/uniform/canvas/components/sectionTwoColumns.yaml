@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: sectionTwoColumns
 name: Section - Two columns
 icon: layout-grid
@@ -89,7 +91,10 @@ slots:
       - refinementListWrapper
       - algolia-searchBox
       - algolia-hits
+      - callToAction
+    allowAllComponents: false
     inheritAllowedComponents: false
+    patternsInAllowedComponents: false
   - id: rightContent
     name: Right Content
     allowedComponents:
@@ -99,7 +104,10 @@ slots:
       - refinementListWrapper
       - algolia-searchBox
       - algolia-hits
+      - featuresGrid
+    allowAllComponents: false
     inheritAllowedComponents: false
+    patternsInAllowedComponents: false
 canBeComposition: false
 created: '2023-03-05T02:09:16.447075+00:00'
-updated: '2023-03-09T15:20:51.574725+00:00'
+updated: '2023-04-14T01:20:59.643396+00:00'

@@ -1,0 +1,66 @@
+composition:
+  _name: Demo
+  _id: 95abf165-2c0d-4ce0-b09f-230cb5b0e1f7
+  _slug: demo
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Demo page
+  slots:
+    content:
+      - _id: 03d2ebaf-b498-4334-84a4-d637d9278d98
+        type: hero
+        _pattern: 4898f45a-0f7d-40d2-9ffd-87a10a622630
+      - _id: 84c26efc-bf86-4e97-8c20-95fcdb789049
+        type: productCollection
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Best Arabica Beans in town
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 5
+                searchText: ''
+                facetsValues:
+                  topCategory:
+                    - Coffee Beans
+                  subcategories:
+                    - Arabica
+              index_name: Products
+          subTitle:
+            type: text
+            value: you better believe it!
+      - _id: d34a3fd5-84ae-4e91-b2b6-54896c1bb8f0
+        type: productCollection
+        parameters:
+          title:
+            type: text
+            value: Espresso makers that work great!
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 5
+                searchText: ''
+                facetsValues:
+                  topCategory:
+                    - Coffee Makers
+                  subcategories:
+                    - Espresso
+              index_name: Products
+          seeMoreUrl:
+            type: link
+            value:
+              path: /shop/coffee-makers
+              nodeId: ef4f9aed-6439-4a2d-b038-96b643711c9e
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          seeMoreTitle:
+            type: text
+            value: See more!
+created: '2023-03-28T10:31:05.96045+00:00'
+modified: '2023-03-28T10:42:29.695067+00:00'
+pattern: false

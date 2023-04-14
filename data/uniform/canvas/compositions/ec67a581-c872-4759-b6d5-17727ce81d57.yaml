@@ -3,12 +3,6 @@ composition:
   _id: ec67a581-c872-4759-b6d5-17727ce81d57
   type: sectionTwoColumns
   parameters:
-    backgroundType:
-      type: select
-      value: White
-    hideBottomBorder:
-      type: checkbox
-      value: true
     mobileItemsOrder:
       type: select
       value: order-last
@@ -177,6 +171,6 @@ composition:
                 textLink:
                   type: text
                   value: READ »
-created: '2022-12-01T00:18:33.25106+00:00'
-modified: '2022-12-01T00:18:33.25106+00:00'
+created: '2023-03-05T02:09:21.789306+00:00'
+modified: '2023-04-14T01:20:27.550009+00:00'
 pattern: true

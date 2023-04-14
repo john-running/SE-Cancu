@@ -1,9 +1,0 @@
-composition:
-  _name: test
-  _id: 6cac3be7-bfa7-41d5-9da3-2137993695e4
-  _slug: test
-  type: landingPage
-  parameters: {}
-created: '2023-03-08T00:07:20.821143+00:00'
-modified: '2023-03-08T00:07:20.821143+00:00'
-pattern: false

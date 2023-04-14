@@ -1,0 +1,119 @@
+composition:
+  _name: Black Mountain Pour-Over Coffee Maker
+  _id: 8585da63-40b1-4c14-b6c5-19b73527cc11
+  _slug: black-mountain-pour-over-coffee-maker
+  type: customPdp
+  slots:
+    content:
+      - _id: 39653d83-f952-4ad2-a892-0aa83c96012e
+        type: $personalization
+        slots:
+          pz:
+            - _id: 76ada942-e86f-46d3-b817-23868a854aa2
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: wealthyPeopleFromSanFrancisco
+                        r: 0
+                        op: '>'
+                    name: ''
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1656096296/JavaDrip/heros/Categories/Beans.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1656096296
+                      publicId: JavaDrip/heros/Categories/Beans
+                      createdAt: '2022-06-24T18:44:56Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/Beans.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+            - _id: feb9d319-03d7-47a6-a5e5-b5ea75b0d759
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: We have beans
+                subtitle:
+                  type: text
+                  value: Get your daily espresso with us
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1654509516/JavaDrip/heros/Home%20Page/Coffee%20Makers.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1654509516
+                      publicId: JavaDrip/heros/Home Page/Coffee Makers
+                      createdAt: '2022-06-06T09:58:36Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Home%20Page/Coffee%20Makers.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+        parameters:
+          trackingEventName:
+            type: text
+            value: hero p13n
+      - _id: 7d9a1e47-f878-4de2-9dad-8b7a359223fd
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 2WhmYUI5zjkfPpyMw1o7HE
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: d1c8b803-ffba-4883-baf8-ffa900cd1328
+        type: addToCart
+      - _id: cbd2214e-be42-4f80-a0d3-c0f33b2e0e85
+        type: callToAction
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3ILJwEpo5CzRnzlc6pdkaM
+      - _id: 21959421-a132-4041-b8a4-e98a011f5d3e
+        type: relatedProducts
+        parameters:
+          title:
+            type: text
+            value: Also for your
+          products:
+            type: algolia-recommend
+            value:
+              index_name: Products
+              recommendOptions:
+                objectId: '97'
+                threshold: 30
+                maxRecommendations: 30
+created: '2023-03-17T07:54:34.482107+00:00'
+modified: '2023-03-29T09:21:18.593145+00:00'
+pattern: false

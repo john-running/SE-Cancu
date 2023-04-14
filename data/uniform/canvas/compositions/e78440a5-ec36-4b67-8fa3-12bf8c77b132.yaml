@@ -1,0 +1,49 @@
+composition:
+  _name: Instant Search
+  _id: e78440a5-ec36-4b67-8fa3-12bf8c77b132
+  type: algolia-instantSearch
+  parameters:
+    categoryFilter:
+      type: select
+      value: Coffee Beans
+    instantSearchParams:
+      type: algolia-components
+      value:
+        instantSearchProps:
+          stalledSearchDelay: 200
+  slots:
+    widgets:
+      - _id: 10c50d88-7412-4ade-a139-60030ed5e61c
+        type: sectionTwoColumns
+        slots:
+          leftContent:
+            - _id: a7b77a0d-fe5b-402e-b6eb-5ed69d2f801e
+              type: refinementListWrapper
+          rightContent:
+            - _id: 823cab5a-d435-4912-a8e8-5c8d8623d6ff
+              type: algolia-searchBox
+              parameters:
+                searchBoxParams:
+                  type: algolia-components
+                  value:
+                    searchBoxProps:
+                      searchAsYouType: true
+            - _id: e68ec4fc-085f-47f8-86aa-b58807f56ec6
+              type: algolia-hits
+              slots:
+                hitComponent:
+                  - _id: 4a918328-186c-4eaa-b84f-1859270d77b6
+                    type: algolia-hit
+        parameters:
+          verticalAlignment:
+            type: select
+            value: items-start
+          leftContentColumns:
+            type: select
+            value: '4'
+          rightContentColumns:
+            type: select
+            value: '8'
+created: '2023-03-27T09:39:51.437447+00:00'
+modified: '2023-03-27T09:39:51.437447+00:00'
+pattern: true

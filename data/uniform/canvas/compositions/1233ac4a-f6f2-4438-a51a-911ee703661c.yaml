@@ -1,0 +1,57 @@
+composition:
+  _name: Kosmic Coffee Barista Express Espresso Machine
+  _id: 1233ac4a-f6f2-4438-a51a-911ee703661c
+  _slug: kosmic-coffee-barista-express-espresso-machine
+  type: customPdp
+  slots:
+    content:
+      - _id: 9a78b75f-714d-48d1-bb1a-d698becd8499
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: Kosmic Barista
+          subtitle:
+            type: text
+            value: For Espresso that is OUT of this WORLD!
+          backgroundImage:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1662996050/JavaDrip/heros/Categories/coffee_makers.webp
+                ratio: '16:9'
+                width: '2600'
+                format: webp
+                height: '1300'
+                widths: 300,500,800
+                caption: ''
+                options: ''
+                version: 1662996050
+                publicId: JavaDrip/heros/Categories/coffee_makers
+                createdAt: '2022-09-12T15:20:50Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/coffee_makers.webp
+                resourceType: image
+                transformation: ''
+                globalImageOptions: ''
+      - _id: 7e68caf4-b26d-4fc1-a0b8-c9d6af4aad22
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 4Eru4xIRz4Kg2t3WWWYdS4
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: 42c12db5-c38f-4aef-90d4-b85e8fadf8ac
+        type: addToCart
+created: '2023-03-14T07:55:59.432261+00:00'
+modified: '2023-03-17T13:33:18.233735+00:00'
+pattern: false

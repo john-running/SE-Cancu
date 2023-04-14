@@ -39,20 +39,20 @@ composition:
           title:
             type: text
             value: About this product
-      - _id: b03f1fa2-e06e-458b-901c-ebccee4cd80a
+      - _id: 5bb2a79a-8e0b-408f-b4cc-6ebdc9d020be
         type: relatedProducts
         parameters:
           title:
             type: text
-            value: More products like this
+            value: Just for you!
           products:
             type: algolia-recommend
             value:
               index_name: Products
               recommendOptions:
-                objectId: '81'
-                threshold: 30
-                maxRecommendations: 5
-created: '2023-03-08T00:07:16.672287+00:00'
-modified: '2023-03-09T01:19:46.079912+00:00'
+                objectId: '140'
+                threshold: 25
+                maxRecommendations: 3
+created: '2023-03-05T02:09:23.884299+00:00'
+modified: '2023-03-28T10:24:00.740443+00:00'
 pattern: false

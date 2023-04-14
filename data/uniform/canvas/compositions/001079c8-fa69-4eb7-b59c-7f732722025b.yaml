@@ -16,46 +16,44 @@ composition:
         type: $personalization
         slots:
           pz:
-            - _id: 8d899a00-3969-42e1-b02d-cef71f718084
+            - _id: 7f694a51-fcda-49b4-a182-786446d22eb7
               type: hero
               parameters:
+                title:
+                  type: text
+                  value: Our new JavaDrip Specialty
                 $pzCrit:
                   type: $pzCrit
                   value:
+                    op: '|'
                     crit:
-                      - l: wealthyPeopleFromSanFrancisco
+                      - l: specialtyLaunch
                         r: 0
                         op: '>'
-                    name: ''
-                titleAi:
-                  type: ai-generated-text
-                  value:
-                    text: 'SF Wealthy: Coffee Now!'
-                subtitleAi:
-                  type: ai-generated-text
-                  value:
-                    text: >-
-                      Coffee for the wealthy of San Francisco: Enjoy a luxurious
-                      cup of the world's finest coffee beans, expertly roasted
-                      to perfection. #luxurycoffeeSF
+                      - l: budget_3
+                        op: +
+                    name: 'Hero: Our new JavaDrip Specialty'
+                subtitle:
+                  type: text
+                  value: Great features awesome price
                 backgroundImage:
                   type: cloudinary-media-selector
                   value:
                     - alt: ''
                       url: >-
-                        https://res.cloudinary.com/uniformdev/image/upload/v1662996050/JavaDrip/heros/Categories/coffee_makers.webp
+                        https://res.cloudinary.com/uniformdev/image/upload/v1679063642/JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5.jpg
                       ratio: '16:9'
-                      width: '2600'
-                      format: webp
-                      height: '1300'
+                      width: '1000'
+                      format: jpg
+                      height: '562'
                       widths: 300,500,800
                       caption: ''
                       options: ''
-                      version: 1662996050
-                      publicId: JavaDrip/heros/Categories/coffee_makers
-                      createdAt: '2022-09-12T15:20:50Z'
+                      version: 1679063642
+                      publicId: JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5
+                      createdAt: '2023-03-17T14:34:02Z'
                       previewUrl: >-
-                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/coffee_makers.webp
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/JavaDrip_Specialty_-_countertop_a5olj5.jpg
                       resourceType: image
                       transformation: ''
                       globalImageOptions: ''
@@ -64,7 +62,7 @@ composition:
               parameters:
                 title:
                   type: text
-                  value: We sell the best beans
+                  value: Carefully Selected Beans
                 titleAi:
                   type: ai-generated-text
                   value:
@@ -115,7 +113,7 @@ composition:
             value:
               source: default
               entryId: 3yQPxKZxZYDxeotYwNy0Sj
-      - _id: 59754881-674a-4d72-af87-9de65fb95c79
+      - _id: 62e447ae-0236-4282-a8cf-2feb934648d9
         type: productPromo
         parameters:
           product:
@@ -132,12 +130,12 @@ composition:
           paddingBotom:
             type: select
             value: Small
-      - _id: 45f29f60-7525-43fd-8cbe-9ea568219b03
+      - _id: c34c942a-32c6-4e6f-9aee-550aacb4bd3d
         type: featuredProducts
         parameters:
           title:
             type: text
-            value: We got the beans!
+            value: JavaDrip Coffee Beans
           sortBy:
             type: select
             value: price
@@ -148,7 +146,7 @@ composition:
               entryId: 2iBQnVCClBgENtLRSu2WWO
           subTitle:
             type: text
-            value: some serious quality
+            value: The best beans from around the world
           addToCart:
             type: checkbox
             value: true
@@ -158,9 +156,9 @@ composition:
           seeMoreUrl:
             type: link
             value:
-              path: /products
-              nodeId: ca62852d-1ae9-4501-9ff3-f61ee5cc1e4c
-              projectMapId: da7f7598-f910-41fb-8d8d-8154703b9137
+              path: /shop/coffee-beans
+              nodeId: 67a2b191-f5bb-478d-b8cb-6ed06de7cd5c
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
           seeMoreTitle:
             type: text
             value: See more beans
@@ -173,7 +171,7 @@ composition:
         parameters:
           title:
             type: text
-            value: Espresso machines out of this world
+            value: Professional Grade Espresso Machines
           sortBy:
             type: select
             value: price
@@ -182,6 +180,9 @@ composition:
             value:
               source: default
               entryId: 1d14hjxTrgxWJjxHGQ93fy
+          subTitle:
+            type: text
+            value: For your home or office
           addToCart:
             type: checkbox
             value: true
@@ -191,9 +192,9 @@ composition:
           seeMoreUrl:
             type: link
             value:
-              path: /products
-              nodeId: ca62852d-1ae9-4501-9ff3-f61ee5cc1e4c
-              projectMapId: da7f7598-f910-41fb-8d8d-8154703b9137
+              path: /shop/coffee-makers
+              nodeId: ef4f9aed-6439-4a2d-b038-96b643711c9e
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
           seeMoreTitle:
             type: text
             value: See more machines
@@ -205,7 +206,7 @@ composition:
         parameters:
           title:
             type: text
-            value: Awesome coffee machines!!!
+            value: Feature Packed Coffee Machines
           products:
             type: algolia-query
             value:
@@ -216,7 +217,8 @@ composition:
                   topCategory:
                     - Coffee Makers
                   subcategories:
-                    - French Press
+                    - Percolators
+                    - Espresso
               index_name: Products
           addToCart:
             type: checkbox
@@ -224,8 +226,8 @@ composition:
           seeMoreUrl:
             type: link
             value:
-              path: /products
-              nodeId: 1ed3c14c-4f4d-4e62-85e0-bc3e6a9a3ead
+              path: /shop/coffee-makers
+              nodeId: ef4f9aed-6439-4a2d-b038-96b643711c9e
               projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
           seeMoreTitle:
             type: text
@@ -236,7 +238,7 @@ composition:
         parameters:
           title:
             type: text
-            value: Coffee beanz
+            value: International Beans
           products:
             type: algolia-query
             value:
@@ -249,7 +251,13 @@ composition:
                   subcategories:
                     - Liberica
               index_name: Products
+          seeMoreUrl:
+            type: link
+            value:
+              path: /shop/coffee-beans
+              nodeId: 67a2b191-f5bb-478d-b8cb-6ed06de7cd5c
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
   _dataResources: {}
 created: '2023-03-07T01:47:22.011339+00:00'
-modified: '2023-03-10T00:41:58.577784+00:00'
+modified: '2023-04-14T00:47:20.571847+00:00'
 pattern: false

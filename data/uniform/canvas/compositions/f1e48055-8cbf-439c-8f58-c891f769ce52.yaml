@@ -1,37 +1,37 @@
 composition:
-  _name: Cervello di Caffe
+  _name: Product Detail Demo
   _id: f1e48055-8cbf-439c-8f58-c891f769ce52
   _slug: cervello-di-caffe
   type: productDetailPage
   slots:
     content:
-      - _id: 1863a55a-54b9-44f8-973d-82681c5bb183
+      - _id: bc8b0fbc-d1ba-435e-a3e5-5f7523269d2c
         type: $personalization
         slots:
           pz:
-            - _id: abe647f2-f977-466c-bbff-2ed43ec5a60d
+            - _id: 55c12e24-f7b9-4ce1-af32-10c330b814cf
               type: hero
-              variant: fullWidth
+              variant: boxed
               parameters:
                 $pzCrit:
                   type: $pzCrit
                   value:
                     crit:
-                      - l: richPeopleFromNewYork
+                      - l: wealthyPeopleFromSanFrancisco
                         r: 0
                         op: '>'
                     name: ''
                 titleAi:
                   type: ai-generated-text
                   value:
-                    text: Drink NYC's Finest Coffee!
+                    text: Drink SF's Finest Coffee!
                 subtitleAi:
                   type: ai-generated-text
                   value:
                     text: >-
-                      Brew the best coffee in NYC! Enjoy a luxurious experience
-                      with our high-end beans, perfect for the discerning palate
-                      of the rich in the Big Apple.
+                      Enjoy luxury coffee from San Francisco: Freshly roasted
+                      beans from around the world, expertly prepared for the
+                      wealthy connoisseur. #SFluxurycoffee
                 backgroundImage:
                   type: cloudinary-media-selector
                   value:
@@ -74,28 +74,27 @@ composition:
                   value:
                     - alt: ''
                       url: >-
-                        https://res.cloudinary.com/uniformdev/image/upload/v1678249473/JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5.jpg
-                      uuid: dddbef39-145f-43cc-8159-a6ea43857db7
+                        https://res.cloudinary.com/uniformdev/image/upload/v1678457908/JavaDrip/Cervello/cervello_smart_landing_hero_kh0vi3.png
                       ratio: '16:9'
-                      width: '2600'
-                      format: jpg
-                      height: '1300'
+                      width: '1024'
+                      format: png
+                      height: '512'
                       widths: 300,500,800
                       caption: ''
                       options: ''
-                      version: 1678249473
-                      publicId: JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5
-                      createdAt: '2023-03-08T04:24:33Z'
+                      version: 1678457908
+                      publicId: JavaDrip/Cervello/cervello_smart_landing_hero_kh0vi3
+                      createdAt: '2023-03-10T14:18:28Z'
                       previewUrl: >-
-                        https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5.jpg
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/Cervello/cervello_smart_landing_hero_kh0vi3.png
                       resourceType: image
                       transformation: ''
-                      globalImageOptions: q_auto,f_auto
+                      globalImageOptions: ''
         parameters:
           trackingEventName:
             type: text
-            value: PDP
-      - _id: 0c43cc99-104a-4e88-a722-e9f055037a6f
+            value: Hero
+      - _id: 440b9ca3-a064-4389-93c7-db4f3f26ecd7
         type: featuredProduct
         variant: imageLeft
         parameters:
@@ -112,31 +111,32 @@ composition:
               projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
           buttonCopy:
             type: text
-            value: Learn about it
+            value: Learn more how make the best cup
           paddingTop:
             type: select
             value: Large
-      - _id: c7769f01-ae97-41f8-9b0c-fed7a522f2ee
-        type: featuredProduct
-        variant: imageLeft
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: 7634961b-df31-4f5a-b04c-d86955d74e5d
+        type: sectionTwoColumns
+        slots:
+          leftContent:
+            - _id: 0c47d92a-d707-4446-90bd-fa09f35a519e
+              type: productInfo
+          rightContent:
+            - _id: a28632df-acec-43af-a24d-83e64c7b55d7
+              type: addToCart
         parameters:
-          product:
-            type: contentfulEntry
-            value:
-              source: default
-              entryId: 44bZvrxAEG8Dw7ammtpz7E
-          buttonUrl:
-            type: link
-            value:
-              path: /articles/7-tips-for-making-the-best-coffee-ever
-              nodeId: b0f87c15-8388-450d-9764-865480115dca
-              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
-          buttonCopy:
-            type: text
-            value: Learn about it
-          paddingTop:
+          verticalAlignment:
             type: select
-            value: Large
+            value: items-center
+          leftContentColumns:
+            type: select
+            value: '6'
+          rightContentColumns:
+            type: select
+            value: '6'
       - _id: 30bacd81-c867-465e-b156-3fc2f95229f0
         type: featuredCallout
         variant: imageRight
@@ -155,6 +155,12 @@ composition:
           buttonCopy:
             type: text
             value: Learn more
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
       - _id: 915080f5-85c0-4fd2-9b14-24aa25bb0988
         type: featuredCallout
         variant: imageLeft
@@ -167,23 +173,29 @@ composition:
           buttonCopy:
             type: text
             value: aaa
-      - _id: cada9536-f0e9-47f6-b1a5-28485873175c
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+      - _id: 8e77b959-d4f7-4789-811a-16fd8c23c2ce
         type: relatedProducts
         parameters:
           title:
             type: text
-            value: Recommended products
+            value: Products like this one
           products:
             type: algolia-recommend
             value:
               index_name: Products
               recommendOptions:
                 objectId: '140'
-                threshold: 30
-                maxRecommendations: 3
-      - _id: 11a321c1-4cec-499d-97b1-a21be62bc7f2
+                threshold: 20
+                maxRecommendations: 30
+      - _id: 7205adb3-d0f6-422a-be24-11ed278acd56
         type: accordion
         _pattern: a384b866-3bbb-4f30-847b-6e6429a90249
 created: '2023-03-08T05:27:18.698673+00:00'
-modified: '2023-03-09T21:56:19.403974+00:00'
+modified: '2023-03-10T16:57:41.290108+00:00'
 pattern: false

@@ -1,0 +1,126 @@
+composition:
+  _name: Lars demo 2
+  _id: bd121b8b-f936-463c-b073-83b07fe666f4
+  _slug: lars-demo-2
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Hey there
+  slots:
+    content:
+      - _id: 9fdb9b4d-151d-4cd4-b2f9-7fe4f5d86bce
+        type: $personalization
+        slots:
+          pz:
+            - _id: 8aeab2ca-8f61-492b-bdc3-82b12ef2d0d7
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: wealthyPeopleFromSanFrancisco
+                        r: 0
+                        op: '>'
+                    name: ''
+                titleAi:
+                  type: ai-generated-text
+                  value:
+                    text: Drink SF's Finest Coffee!
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /products/cervello-di-caffe
+                    nodeId: e32536b6-13ff-4a4c-810d-463532077893
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                subtitleAi:
+                  type: ai-generated-text
+                  value:
+                    text: >-
+                      Treat yourself to the finest coffee San Francisco has to
+                      offer - indulge in luxury and sip on the rich flavors of
+                      the city's most exclusive blends. #SFWealthyCoffee
+            - _id: a4bd7415-eaf5-491c-adcc-f34e6b89da62
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: New product is coming
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1656096296/JavaDrip/heros/Categories/Beans.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1656096296
+                      publicId: JavaDrip/heros/Categories/Beans
+                      createdAt: '2022-06-24T18:44:56Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/Beans.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+        parameters:
+          trackingEventName:
+            type: text
+            value: Hero p13n
+      - _id: 6a1a2f44-d835-4780-ad7b-ed6eed4e7afc
+        type: featuredProducts
+        parameters:
+          title:
+            type: text
+            value: We have makers for you
+          category:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 1d14hjxTrgxWJjxHGQ93fy
+          productDisplayLimit:
+            type: number
+            value: '3'
+      - _id: 9d8feb90-654f-427e-98e6-6d581cb5c5de
+        type: productCollection
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: And the beans
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 3
+                searchText: ''
+                facetsValues:
+                  topCategory:
+                    - Coffee Beans
+                  subcategories:
+                    - Liberica
+              index_name: Products
+      - _id: 6799da6e-d260-4e9e-9c56-88d7417360c2
+        type: callToAction
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 22TK44YTvz0XRlx50brTWW
+      - _id: ca146543-72c2-4a21-b888-a0088b9292f6
+        type: featuredCallout
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3yQPxKZxZYDxeotYwNy0Sj
+created: '2023-03-13T16:16:11.389715+00:00'
+modified: '2023-03-13T16:37:48.257093+00:00'
+pattern: false
