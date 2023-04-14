@@ -1,5 +1,5 @@
 import React from 'react';
-import NextLink from 'next/link';
+//import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
@@ -26,9 +26,12 @@ const Link: React.FC<Props> = ({ title, href = '', className = '', children, scr
       {children ?? title}
     </a>
   ) : (
-    <NextLink href={localizedHref} scroll={scroll} className={classNames(defaultClasses, className)}>
+    // <NextLink href={localizedHref} scroll={scroll} className={classNames(defaultClasses, className)}>
+    //   {children ?? title}
+    // </NextLink>
+    <a href={localizedHref} className={classNames(defaultClasses, className)}>
       {children ?? title}
-    </NextLink>
+    </a>
   );
 };
 
