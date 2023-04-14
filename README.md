@@ -1,4 +1,4 @@
-# CANCU stack demo - Contentful, Algolia, Next.js, Commerce Layer and Uniform
+# CANCU🌴 stack demo - Contentful, Algolia, Next.js, Commerce Layer and Uniform
 
 ## Requirements:
 - [Node.js](https://nodejs.org/en/download/) 16.10.0+
