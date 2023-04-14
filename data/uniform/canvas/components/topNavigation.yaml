@@ -1,0 +1,35 @@
+id: topNavigation
+name: Top Navigation
+icon: border-top
+parameters:
+  - id: logo
+    name: Logo
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+  - id: showFavorites
+    name: Show Favorites
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: topNav
+    name: Top Nav
+    allowedComponents:
+      - navigationLinks
+      - navigationMenu
+      - navigationItem
+    inheritAllowedComponents: false
+slugSettings:
+  unique: global
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
+canBeComposition: false
+created: '2023-03-05T02:09:17.675797+00:00'
+updated: '2023-03-09T15:20:51.768291+00:00'

@@ -1,0 +1,75 @@
+id: productDeal
+name: Product Deal
+icon: shopping-bag
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: subTitle
+    name: Subtitle
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: textButton
+    name: Text button
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: icon
+    name: Icon
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      defaultoptions: ''
+  - id: backgroundType
+    name: Background Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: White
+          value: White
+        - text: Dark
+          value: Dark
+        - text: Light Gray
+          value: LightGray
+      required: true
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: paddingBottom
+    name: Padding Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:12.736428+00:00'
+updated: '2023-03-09T15:20:51.103667+00:00'

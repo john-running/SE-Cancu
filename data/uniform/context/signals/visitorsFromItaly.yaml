@@ -1,0 +1,16 @@
+id: visitorsFromItaly
+name: Visitors from Italy
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: vc-country
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: IT
+dur: p
+description: ''
+str: 50

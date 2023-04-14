@@ -1,0 +1,50 @@
+composition:
+  _name: 7 Tips for Making the Best Coffee Ever
+  _id: 88a18e3a-c83f-487f-98c9-fd4619c26b67
+  _slug: 7-tips-for-making-the-best-coffee-ever
+  type: article
+  parameters:
+    articleContent:
+      type: contentfulEntry
+      value:
+        source: default
+        entryId: 5zhOX1syEE7MSDx0PeKTFO
+  slots:
+    content:
+      - _id: 79ba2cce-e23e-4db6-a5d9-b221a7a7dda8
+        type: articleContent
+      - _id: 4c3c4c4f-f8aa-4789-a388-73d957d43cf5
+        type: spotlightList
+        slots:
+          spotlightItem:
+            - _id: 580ccb7a-bf3d-47a8-a195-1c612def38da
+              type: spotlightItem
+              parameters:
+                article:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 5gaBKuycYGSctLcWk08L6C
+                articleLink:
+                  type: link
+                  value:
+                    path: /articles
+                    nodeId: 317f8345-1b8a-4520-99cf-1168988742a2
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+            - _id: 9fbfd018-b625-4994-8db5-392b5cb5b589
+              type: spotlightItem
+              parameters:
+                article:
+                  type: contentfulEntry
+                  value:
+                    source: default
+                    entryId: 3M3HZEiLuCDmqeaQXVQ53y
+                articleLink:
+                  type: link
+                  value:
+                    path: /articles
+                    nodeId: 317f8345-1b8a-4520-99cf-1168988742a2
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+created: '2023-03-07T23:09:56.833954+00:00'
+modified: '2023-03-09T22:29:44.347405+00:00'
+pattern: false

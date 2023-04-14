@@ -1,0 +1,12 @@
+composition:
+  _name: '*'
+  _id: 9b8204ac-3015-48bf-8074-3385707469a2
+  _slug: article-slug
+  type: article
+  parameters: {}
+  slots:
+    content:
+      - type: articleContent
+created: '2023-03-08T00:07:07.339506+00:00'
+modified: '2023-03-08T00:07:07.339506+00:00'
+pattern: false

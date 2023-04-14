@@ -1,0 +1,140 @@
+composition:
+  _name: Search
+  _id: 11f3133e-153e-44c9-8547-5afb2e2a0f2e
+  _slug: /search
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Search
+  slots:
+    content:
+      - _id: 84518a7d-1cd8-4fe7-957b-afadbd29c901
+        type: algolia-instantSearch
+        slots:
+          widgets:
+            - _id: cf6f2aaa-1eae-4fa3-8bc4-9b91613d8d7b
+              type: sectionTwoColumns
+              slots:
+                leftContent:
+                  - _id: 4e99928d-6caa-4485-a3e1-a5eda80b777b
+                    type: refinementListWrapper
+                    slots:
+                      content:
+                        - _id: 968c65ff-2cbf-4f43-b848-5876f5c3e4c1
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Type
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 7
+                                  operator: and
+                                  showMore: true
+                                  attribute: topCategory
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                        - _id: 9ed83d7f-5dce-41cc-b79f-8b0e2cc2b636
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Category
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: subcategories
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                        - _id: 914f868a-b69b-4c92-9fe5-1bf1dac1a6b4
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Brand
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: brand
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                rightContent:
+                  - _id: 03c9bf6f-a12f-46af-baff-cb13044531c1
+                    type: algolia-searchBox
+                    parameters:
+                      searchBoxParams:
+                        type: algolia-components
+                        value:
+                          searchBoxProps:
+                            placeholder: search
+                            searchAsYouType: true
+                  - _id: 634756e8-64ae-40b7-811e-9f8c18fd6de6
+                    type: algolia-hits
+                    slots:
+                      hitComponent:
+                        - _id: 330526dd-f977-417d-99ba-e194b5e413d1
+                          type: algolia-hit
+              parameters:
+                mobileItemsOrder:
+                  type: select
+                  value: order-first
+                verticalAlignment:
+                  type: select
+                  value: items-start
+                leftContentColumns:
+                  type: select
+                  value: '4'
+                rightContentColumns:
+                  type: select
+                  value: '8'
+            - _id: d6ce8a6f-c087-4bdf-b907-96e6136ecfcf
+              type: algolia-pagination
+              parameters:
+                pageSize:
+                  type: number
+                  value: 20
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 1
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+        parameters:
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName: Products
+                stalledSearchDelay: 200
+created: '2023-03-09T01:35:01.14587+00:00'
+modified: '2023-03-09T01:51:45.51722+00:00'
+pattern: false

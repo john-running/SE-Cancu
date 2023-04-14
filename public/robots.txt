@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://javadrip.netlify.app
+
+# Sitemaps
+Sitemap: https://javadrip.netlify.app/sitemap.xml

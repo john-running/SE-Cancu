@@ -1,0 +1,189 @@
+composition:
+  _name: Cervello di Caffe
+  _id: f1e48055-8cbf-439c-8f58-c891f769ce52
+  _slug: cervello-di-caffe
+  type: productDetailPage
+  slots:
+    content:
+      - _id: 1863a55a-54b9-44f8-973d-82681c5bb183
+        type: $personalization
+        slots:
+          pz:
+            - _id: abe647f2-f977-466c-bbff-2ed43ec5a60d
+              type: hero
+              variant: fullWidth
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: richPeopleFromNewYork
+                        r: 0
+                        op: '>'
+                    name: ''
+                titleAi:
+                  type: ai-generated-text
+                  value:
+                    text: Drink NYC's Finest Coffee!
+                subtitleAi:
+                  type: ai-generated-text
+                  value:
+                    text: >-
+                      Brew the best coffee in NYC! Enjoy a luxurious experience
+                      with our high-end beans, perfect for the discerning palate
+                      of the rich in the Big Apple.
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1678249473/JavaDrip/Cervello/cervello_smart_landing_hero2_wgtrs8.jpg
+                      ratio: '16:9'
+                      width: '2600'
+                      format: jpg
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1678249473
+                      publicId: JavaDrip/Cervello/cervello_smart_landing_hero2_wgtrs8
+                      createdAt: '2023-03-08T04:24:33Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/Cervello/cervello_smart_landing_hero2_wgtrs8.jpg
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+            - _id: 208ccacc-3540-41b4-b119-c79c576c80bf
+              type: hero
+              variant: boxed
+              parameters:
+                title:
+                  type: text
+                  value: The smartest espresso machine is here
+                buttonUrl:
+                  type: link
+                  value:
+                    path: /articles/7-tips-for-making-the-best-coffee-ever
+                    nodeId: b0f87c15-8388-450d-9764-865480115dca
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                buttonCopy:
+                  type: text
+                  value: Learn more
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1678249473/JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5.jpg
+                      uuid: dddbef39-145f-43cc-8159-a6ea43857db7
+                      ratio: '16:9'
+                      width: '2600'
+                      format: jpg
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1678249473
+                      publicId: JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5
+                      createdAt: '2023-03-08T04:24:33Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/Cervello/cervello_smart_landing_hero_jtsxs5.jpg
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: q_auto,f_auto
+        parameters:
+          trackingEventName:
+            type: text
+            value: PDP
+      - _id: 0c43cc99-104a-4e88-a722-e9f055037a6f
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 44bZvrxAEG8Dw7ammtpz7E
+          buttonUrl:
+            type: link
+            value:
+              path: /articles/7-tips-for-making-the-best-coffee-ever
+              nodeId: b0f87c15-8388-450d-9764-865480115dca
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          buttonCopy:
+            type: text
+            value: Learn about it
+          paddingTop:
+            type: select
+            value: Large
+      - _id: c7769f01-ae97-41f8-9b0c-fed7a522f2ee
+        type: featuredProduct
+        variant: imageLeft
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 44bZvrxAEG8Dw7ammtpz7E
+          buttonUrl:
+            type: link
+            value:
+              path: /articles/7-tips-for-making-the-best-coffee-ever
+              nodeId: b0f87c15-8388-450d-9764-865480115dca
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          buttonCopy:
+            type: text
+            value: Learn about it
+          paddingTop:
+            type: select
+            value: Large
+      - _id: 30bacd81-c867-465e-b156-3fc2f95229f0
+        type: featuredCallout
+        variant: imageRight
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 53W2bdVABiovu2bYrphfTF
+          buttonUrl:
+            type: link
+            value:
+              path: /articles/7-tips-for-making-the-best-coffee-ever
+              nodeId: b0f87c15-8388-450d-9764-865480115dca
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          buttonCopy:
+            type: text
+            value: Learn more
+      - _id: 915080f5-85c0-4fd2-9b14-24aa25bb0988
+        type: featuredCallout
+        variant: imageLeft
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 2tbMPfSRo7lxwb8xFKyTum
+          buttonCopy:
+            type: text
+            value: aaa
+      - _id: cada9536-f0e9-47f6-b1a5-28485873175c
+        type: relatedProducts
+        parameters:
+          title:
+            type: text
+            value: Recommended products
+          products:
+            type: algolia-recommend
+            value:
+              index_name: Products
+              recommendOptions:
+                objectId: '140'
+                threshold: 30
+                maxRecommendations: 3
+      - _id: 11a321c1-4cec-499d-97b1-a21be62bc7f2
+        type: accordion
+        _pattern: a384b866-3bbb-4f30-847b-6e6429a90249
+created: '2023-03-08T05:27:18.698673+00:00'
+modified: '2023-03-09T21:56:19.403974+00:00'
+pattern: false

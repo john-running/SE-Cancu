@@ -1,0 +1,16 @@
+id: richText
+name: Rich Text
+icon: format-text
+parameters:
+  - id: text
+    name: Text
+    type: quill-rte
+    helpText: ''
+    typeConfig:
+      theme: snow
+      placeholderText: edit me now
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:16.178359+00:00'
+updated: '2023-03-09T15:20:51.523145+00:00'

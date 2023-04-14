@@ -1,0 +1,9 @@
+id: 6234c2eb-679c-4d89-89d7-1085410095ae
+name: '*'
+type: composition
+data: {}
+order: 400
+path: /articles/article-slug
+compositionId: 9b8204ac-3015-48bf-8074-3385707469a2
+pathSegment: article-slug
+projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3

@@ -1,0 +1,25 @@
+id: currentCategoryProductList
+name: Current Category Product List
+icon: feed
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: displayLimit
+    name: Display Limit
+    type: number
+    typeConfig:
+      max: '100'
+      min: '4'
+useTeamPermissions: true
+slots:
+  - id: contentBetweenCards
+    name: Content between cards
+    allowedComponents:
+      - spotlightList
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:07.663072+00:00'
+updated: '2023-03-09T15:20:50.232752+00:00'

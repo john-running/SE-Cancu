@@ -1,0 +1,7 @@
+id: richPeopleFromNewYork
+name: Rich People from NYC
+description: ''
+type: 0
+inputs:
+  - dim: richPeople
+    sign: +

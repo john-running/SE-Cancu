@@ -1,0 +1,26 @@
+composition:
+  _name: articles
+  _id: e6b2211d-e148-45be-bce3-338f3627518d
+  _slug: articles
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Java Articles
+  slots:
+    content:
+      - _id: e6fa1183-eaef-4e9c-8030-009d6e65801c
+        type: articlesList
+        parameters:
+          title:
+            type: text
+            value: Articles
+          articles:
+            type: contentfulQuery
+            value:
+              count: 8
+              source: default
+              contentType: article
+created: '2023-03-08T00:07:09.010575+00:00'
+modified: '2023-03-08T00:07:09.010575+00:00'
+pattern: false

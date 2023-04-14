@@ -1,0 +1,15 @@
+id: featuresGrid
+name: Features Grid
+icon: display-grid
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: content
+    name: content
+    minComponents: 1
+    allowedComponents:
+      - featureItem
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:09.574684+00:00'
+updated: '2023-03-09T15:20:50.786273+00:00'

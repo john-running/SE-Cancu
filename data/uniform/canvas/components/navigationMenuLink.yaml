@@ -1,0 +1,22 @@
+id: navigationMenuLink
+name: Navigation Menu Link
+icon: rectangle-rounded
+parameters:
+  - id: ctaText
+    name: CTA Text
+    type: text
+    helpText: call to action text
+    typeConfig:
+      required: true
+  - id: ctaLink
+    name: CTA Link
+    type: link
+    helpText: Call to action link
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: ctaText
+canBeComposition: false
+created: '2023-03-05T02:09:11.71189+00:00'
+updated: '2023-03-09T15:20:50.872482+00:00'

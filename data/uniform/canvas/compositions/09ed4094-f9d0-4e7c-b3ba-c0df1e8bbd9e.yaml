@@ -1,0 +1,151 @@
+composition:
+  _name: Coffee Beans
+  _id: 09ed4094-f9d0-4e7c-b3ba-c0df1e8bbd9e
+  _slug: /coffee-beans
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Search
+  slots:
+    content:
+      - _id: 6d42b98e-3a42-41ca-9051-8b36caea988d
+        type: hero
+        variant: fullWidth
+        parameters:
+          title:
+            type: text
+            value: We got the beanz!
+          backgroundImage:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1662484929/JavaDrip/heros/Home%20Page/Beans.webp
+                uuid: e2587ae1-7670-4545-b084-6705ef9efdd8
+                ratio: '16:9'
+                width: '2600'
+                format: webp
+                height: '1300'
+                widths: 300,500,800
+                caption: ''
+                options: ''
+                version: 1662484929
+                publicId: JavaDrip/heros/Home Page/Beans
+                createdAt: '2022-09-06T17:22:09Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/heros/Home%20Page/Beans.webp
+                resourceType: image
+                transformation: ''
+                globalImageOptions: q_auto,f_auto
+      - _id: 5ee65365-d143-4102-9367-1d163a6477d8
+        type: algolia-instantSearch
+        slots:
+          widgets:
+            - _id: 6a767a2c-9474-49dd-a330-9f08967b74ce
+              type: sectionTwoColumns
+              slots:
+                leftContent:
+                  - _id: e6d09ec9-323d-4b71-a8dc-d023974a836f
+                    type: refinementListWrapper
+                    slots:
+                      content:
+                        - _id: 692597bd-c841-4021-ab5d-79bba0e45ced
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Category
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: subcategories
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                        - _id: 756eb265-3d6c-4a86-bb88-345937744ef7
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Brand
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: brand
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                rightContent:
+                  - _id: 6b97e51a-d57c-4224-9490-a8910a29f6aa
+                    type: algolia-searchBox
+                    parameters:
+                      searchBoxParams:
+                        type: algolia-components
+                        value:
+                          searchBoxProps:
+                            placeholder: search beans
+                            searchAsYouType: true
+                  - _id: e62230c1-728f-4e5c-a471-5680183e249c
+                    type: algolia-hits
+                    slots:
+                      hitComponent:
+                        - _id: 0a431ab9-9125-4f7c-b369-46d21c84f5b8
+                          type: algolia-hit
+              parameters:
+                mobileItemsOrder:
+                  type: select
+                  value: order-first
+                verticalAlignment:
+                  type: select
+                  value: items-start
+                leftContentColumns:
+                  type: select
+                  value: '4'
+                rightContentColumns:
+                  type: select
+                  value: '8'
+            - _id: f563d539-f94a-408d-8ab1-70eb7d70038d
+              type: algolia-pagination
+              parameters:
+                pageSize:
+                  type: number
+                  value: 20
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 1
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+        parameters:
+          categoryFilter:
+            type: select
+            value: Coffee Beans
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName: Products
+                stalledSearchDelay: 200
+created: '2023-03-09T02:00:50.920514+00:00'
+modified: '2023-03-09T02:24:58.707029+00:00'
+pattern: false

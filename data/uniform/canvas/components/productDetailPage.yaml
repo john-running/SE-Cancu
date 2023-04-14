@@ -1,0 +1,27 @@
+id: productDetailPage
+name: Product Detail Page
+icon: shopping-bag
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - productDetailPageContainer
+      - container
+      - addToCart
+      - productDescription
+      - relatedProducts
+      - sectionTwoColumns
+      - hero
+      - featuredCallout
+      - accordion
+      - callToAction
+      - $personalization
+      - featuredProduct
+    inheritAllowedComponents: false
+defaults:
+  type: productDetailPage
+canBeComposition: true
+created: '2023-03-05T02:09:13.269661+00:00'
+updated: '2023-03-09T21:52:51.51428+00:00'

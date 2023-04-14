@@ -1,0 +1,23 @@
+id: footer
+name: Footer
+icon: dock-bottom
+parameters:
+  - id: logo
+    name: Logo
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+  - id: subline
+    name: Subline
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:09.858645+00:00'
+updated: '2023-03-09T15:20:50.585815+00:00'

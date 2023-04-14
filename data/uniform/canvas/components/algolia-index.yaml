@@ -1,0 +1,26 @@
+id: algolia-index
+name: Index
+icon: database
+parameters:
+  - id: indexParams
+    name: Index Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Index
+      indexConfiguration:
+        showOptionalParams: false
+useTeamPermissions: true
+slots:
+  - id: widgets
+    name: Widgets
+    allowedComponents:
+      - algolia-hits
+      - algolia-pagination
+      - algolia-refinementList
+      - algolia-searchBox
+      - algolia-basicComponents
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-08T23:36:33.911186+00:00'
+updated: '2023-03-09T15:20:49.084359+00:00'

@@ -1,0 +1,37 @@
+id: review
+name: Review
+icon: heart
+parameters:
+  - id: title
+    name: Review title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: content
+    name: Review content
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '3'
+  - id: rating
+    name: Rating
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: date
+    name: Date
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: source
+    name: Review origin
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:15.688458+00:00'
+updated: '2023-03-09T15:20:51.545959+00:00'

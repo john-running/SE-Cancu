@@ -1,0 +1,28 @@
+id: shoppingCart
+name: Shopping Cart
+icon: shopping-cart
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: cartTop
+    name: Cart Top
+    allowedComponents:
+      - alert
+      - $localization
+      - $personalization
+    inheritAllowedComponents: false
+  - id: cartBottom
+    name: Cart Bottom
+    allowedComponents:
+      - cartPromotion
+      - $localization
+      - $personalization
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:16.935947+00:00'
+updated: '2023-03-09T15:20:51.686953+00:00'

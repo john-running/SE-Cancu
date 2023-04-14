@@ -1,0 +1,67 @@
+id: featuredProduct
+name: Featured Product
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675163085/vNext%20Demos/Baseline/canvas-preview/Featured_Callout_kkmv6v.png
+parameters:
+  - id: product
+    name: Product
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        product:
+          id: product
+          name: Product
+  - id: buttonUrl
+    name: Button URL
+    type: link
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: buttonCopy
+    name: Button Copy
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: paddingBottom
+    name: Padding Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+useTeamPermissions: true
+slots: []
+titleParameter: product
+canBeComposition: false
+created: '2023-03-08T05:26:27.364638+00:00'
+updated: '2023-03-09T15:20:50.488947+00:00'
+variants:
+  - id: imageRight
+    name: Image Right
+  - id: imageLeft
+    name: Image Left

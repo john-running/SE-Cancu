@@ -1,0 +1,255 @@
+composition:
+  _name: Home
+  _id: 001079c8-fa69-4eb7-b59c-7f732722025b
+  _slug: /
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: 'JavaDrip: Home'
+    pageMetaDescription:
+      type: text
+      value: Uniform commerce starter kit
+  slots:
+    content:
+      - _id: 5cd16215-f2df-42f2-8cdc-beadaa6eae3e
+        type: $personalization
+        slots:
+          pz:
+            - _id: 8d899a00-3969-42e1-b02d-cef71f718084
+              type: hero
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: wealthyPeopleFromSanFrancisco
+                        r: 0
+                        op: '>'
+                    name: ''
+                titleAi:
+                  type: ai-generated-text
+                  value:
+                    text: 'SF Wealthy: Coffee Now!'
+                subtitleAi:
+                  type: ai-generated-text
+                  value:
+                    text: >-
+                      Coffee for the wealthy of San Francisco: Enjoy a luxurious
+                      cup of the world's finest coffee beans, expertly roasted
+                      to perfection. #luxurycoffeeSF
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1662996050/JavaDrip/heros/Categories/coffee_makers.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1662996050
+                      publicId: JavaDrip/heros/Categories/coffee_makers
+                      createdAt: '2022-09-12T15:20:50Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/coffee_makers.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+            - _id: d5288c55-9f7d-48c8-9544-c16b6fc2a9fb
+              type: hero
+              parameters:
+                title:
+                  type: text
+                  value: We sell the best beans
+                titleAi:
+                  type: ai-generated-text
+                  value:
+                    text: Try our {$pzCrit} coffee!
+                subtitle:
+                  type: text
+                  value: >-
+                    We believe that the perfect cup of coffee starts with the
+                    perfect type of bean and we provide a variety of beans to
+                    fit any occasion or brewing method.
+                subtitleAi:
+                  type: ai-generated-text
+                  value:
+                    text: >-
+                      Sip the world's finest coffee & be part of NYC's elite.
+                      Enjoy the rich flavor & exquisite aroma of freshly-brewed
+                      luxury. #NYCcoffeeelite
+                backgroundImage:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1656096296/JavaDrip/heros/Categories/Beans.webp
+                      ratio: '16:9'
+                      width: '2600'
+                      format: webp
+                      height: '1300'
+                      widths: 300,500,800
+                      caption: ''
+                      options: ''
+                      version: 1656096296
+                      publicId: JavaDrip/heros/Categories/Beans
+                      createdAt: '2022-06-24T18:44:56Z'
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/Categories/Beans.webp
+                      resourceType: image
+                      transformation: ''
+                      globalImageOptions: ''
+        parameters:
+          trackingEventName:
+            type: text
+            value: Home Personalization
+      - _id: 7910852b-edef-42c8-bf89-77b889a3b466
+        type: callToAction
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3yQPxKZxZYDxeotYwNy0Sj
+      - _id: 59754881-674a-4d72-af87-9de65fb95c79
+        type: productPromo
+        parameters:
+          product:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 44bZvrxAEG8Dw7ammtpz7E
+          buttonCopy:
+            type: text
+            value: Buy now
+          paddingTop:
+            type: select
+            value: Small
+          paddingBotom:
+            type: select
+            value: Small
+      - _id: 45f29f60-7525-43fd-8cbe-9ea568219b03
+        type: featuredProducts
+        parameters:
+          title:
+            type: text
+            value: We got the beans!
+          sortBy:
+            type: select
+            value: price
+          category:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 2iBQnVCClBgENtLRSu2WWO
+          subTitle:
+            type: text
+            value: some serious quality
+          addToCart:
+            type: checkbox
+            value: true
+          sortOrder:
+            type: select
+            value: desc
+          seeMoreUrl:
+            type: link
+            value:
+              path: /products
+              nodeId: ca62852d-1ae9-4501-9ff3-f61ee5cc1e4c
+              projectMapId: da7f7598-f910-41fb-8d8d-8154703b9137
+          seeMoreTitle:
+            type: text
+            value: See more beans
+          productDisplayLimit:
+            type: number
+            value: '3'
+      - _id: 924d2550-c9e6-4df4-9bda-84cedf5dd3ea
+        type: featuredProducts
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Espresso machines out of this world
+          sortBy:
+            type: select
+            value: price
+          category:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 1d14hjxTrgxWJjxHGQ93fy
+          addToCart:
+            type: checkbox
+            value: true
+          sortOrder:
+            type: select
+            value: desc
+          seeMoreUrl:
+            type: link
+            value:
+              path: /products
+              nodeId: ca62852d-1ae9-4501-9ff3-f61ee5cc1e4c
+              projectMapId: da7f7598-f910-41fb-8d8d-8154703b9137
+          seeMoreTitle:
+            type: text
+            value: See more machines
+          productDisplayLimit:
+            type: number
+            value: '3'
+      - _id: c41e3158-1024-466c-bb49-d70567fe4dd0
+        type: productCollection
+        parameters:
+          title:
+            type: text
+            value: Awesome coffee machines!!!
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 3
+                searchText: ''
+                facetsValues:
+                  topCategory:
+                    - Coffee Makers
+                  subcategories:
+                    - French Press
+              index_name: Products
+          addToCart:
+            type: checkbox
+            value: true
+          seeMoreUrl:
+            type: link
+            value:
+              path: /products
+              nodeId: 1ed3c14c-4f4d-4e62-85e0-bc3e6a9a3ead
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          seeMoreTitle:
+            type: text
+            value: Learn more
+      - _id: 05c5cccf-d3cd-4271-be1d-cbaf4f63eedf
+        type: productCollection
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Coffee beanz
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 5
+                searchText: ''
+                facetsValues:
+                  topCategory:
+                    - Coffee Beans
+                  subcategories:
+                    - Liberica
+              index_name: Products
+  _dataResources: {}
+created: '2023-03-07T01:47:22.011339+00:00'
+modified: '2023-03-10T00:41:58.577784+00:00'
+pattern: false

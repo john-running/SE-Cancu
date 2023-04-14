@@ -1,0 +1,27 @@
+id: aboutProduct
+name: About Product
+icon: file-document
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+useTeamPermissions: true
+slots:
+  - id: items
+    name: Items
+    minComponents: 1
+    allowedComponents:
+      - aboutProductItem
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:02.585261+00:00'
+updated: '2023-03-09T15:20:48.808492+00:00'

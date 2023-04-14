@@ -1,0 +1,33 @@
+id: cartPromotion
+name: Cart Promotion
+icon: bulb
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '4'
+  - id: ctaTitle
+    name: CTA Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: ctaLink
+    name: CTA Link
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:06.579522+00:00'
+updated: '2023-03-09T15:20:50.224328+00:00'

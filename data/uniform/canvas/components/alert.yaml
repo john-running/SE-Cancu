@@ -1,0 +1,55 @@
+id: alert
+name: Alert
+icon: info
+parameters:
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: type
+    name: Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Info
+          value: Info
+        - text: Success
+          value: Success
+        - text: Warning
+          value: Warning
+        - text: Error
+          value: Error
+      required: true
+  - id: icon
+    name: Icon
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Info
+          value: InformationCircle
+        - text: Exclamation
+          value: ExclamationTriangleIcon
+        - text: Check
+          value: CheckCircleIcon
+        - text: Circle
+          value: XCircleIcon
+  - id: ctaTitle
+    name: CTA Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: ctaLink
+    name: CTA Link
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: text
+canBeComposition: false
+created: '2023-03-05T02:09:03.71084+00:00'
+updated: '2023-03-09T15:20:48.584457+00:00'

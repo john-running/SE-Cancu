@@ -1,0 +1,9 @@
+id: 67a2b191-f5bb-478d-b8cb-6ed06de7cd5c
+name: Coffee Beans
+type: composition
+data: {}
+order: 500
+path: /shop/coffee-beans
+compositionId: 09ed4094-f9d0-4e7c-b3ba-c0df1e8bbd9e
+pathSegment: coffee-beans
+projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3

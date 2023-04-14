@@ -1,0 +1,24 @@
+id: relatedProducts
+name: Recommended Products
+icon: bulb
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: products
+    name: Products
+    type: algolia-recommend
+    helpText: ''
+    typeConfig:
+      allowedFacet: brand
+      allowedIndex: Products
+      titleFieldName: name
+      imageUrlFieldName: ''
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:15.395448+00:00'
+updated: '2023-03-09T15:20:51.453381+00:00'

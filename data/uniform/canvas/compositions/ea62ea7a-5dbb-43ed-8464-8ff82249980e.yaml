@@ -1,0 +1,40 @@
+composition:
+  _name: kosmic-coffee-unbreakable-pour-over-replacement-pot
+  _id: ea62ea7a-5dbb-43ed-8464-8ff82249980e
+  _slug: kosmic-coffee-unbreakable-pour-over-replacement-pot
+  type: productDetailPage
+  slots:
+    content:
+      - _id: 8dc41b53-beb7-45f3-819c-489b3ae9b098
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: kosmic-coffee-unbreakable-pour-over-replacement-pot
+          subtitle:
+            type: text
+            value: kosmic-coffee-unbreakable-pour-over-replacement-pot
+          backgroundImage:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1662486302/JavaDrip/heros/TourBar%20Home%20Page/Coffee%20Makers.webp
+                ratio: '16:9'
+                width: '2600'
+                format: webp
+                height: '1300'
+                widths: 300,500,800
+                caption: ''
+                options: ''
+                version: 1662486302
+                publicId: JavaDrip/heros/TourBar Home Page/Coffee Makers
+                createdAt: '2022-09-06T17:45:02Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/heros/TourBar%20Home%20Page/Coffee%20Makers.webp
+                resourceType: image
+                transformation: ''
+                globalImageOptions: ''
+created: '2023-03-09T23:25:31.823957+00:00'
+modified: '2023-03-09T23:25:51.199174+00:00'
+pattern: false

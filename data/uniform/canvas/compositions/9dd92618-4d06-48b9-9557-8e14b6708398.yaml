@@ -1,0 +1,20 @@
+composition:
+  _name: Favorites
+  _id: 9dd92618-4d06-48b9-9557-8e14b6708398
+  _slug: /favorites
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Favorites
+  slots:
+    content:
+      - _id: f737c486-997b-458c-8c50-9c6b9c61355f
+        type: favorites
+        parameters:
+          title:
+            type: text
+            value: My favorites
+created: '2022-12-01T00:18:32.127266+00:00'
+modified: '2022-12-01T00:18:32.127266+00:00'
+pattern: false

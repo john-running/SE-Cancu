@@ -1,0 +1,12 @@
+composition:
+  _name: Javalin2023
+  _id: 0ecce30b-3db1-462d-915b-c76c0953196c
+  _slug: javalin2023
+  type: productDetailPage
+  parameters: {}
+  slots:
+    content:
+      - type: productDetailPageContainer
+created: '2023-03-08T00:07:14.517119+00:00'
+modified: '2023-03-08T00:07:14.517119+00:00'
+pattern: false

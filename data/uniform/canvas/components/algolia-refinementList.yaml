@@ -1,0 +1,27 @@
+id: algolia-refinementList
+name: Refinement List
+icon: image-text
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: isExpanded
+    name: Expand by default
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+  - id: refinementListParams
+    name: Refinement List Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Refinement List
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-08T23:36:33.956762+00:00'
+updated: '2023-03-09T15:20:49.452603+00:00'

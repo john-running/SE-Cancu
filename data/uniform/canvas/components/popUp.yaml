@@ -1,0 +1,30 @@
+id: popUp
+name: Pop Up
+icon: arrow-up-o
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: image
+    name: Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:12.225862+00:00'
+updated: '2023-03-09T15:20:50.993492+00:00'

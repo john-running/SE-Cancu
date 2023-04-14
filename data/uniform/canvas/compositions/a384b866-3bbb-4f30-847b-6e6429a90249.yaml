@@ -1,0 +1,39 @@
+composition:
+  _name: Product FAQ
+  _id: a384b866-3bbb-4f30-847b-6e6429a90249
+  type: accordion
+  parameters:
+    content:
+      type: contentfulEntry
+      value:
+        source: default
+        entryId: 3F5E4OBawYAeAcOzYRb52p
+  slots:
+    items:
+      - _id: 43418ff8-6515-4dd2-b445-bd31fca76a38
+        type: accordionItem
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 1XqpiuVtNl03ST5DmeSRz7
+      - _id: 024f2259-21cc-4f17-8a60-caf5cc04c67c
+        type: accordionItem
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 1PMRLXmQ9Rm7AqMsqZtyaq
+      - _id: 5e4932c9-f930-4f24-8aa0-090073cadca5
+        type: accordionItem
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 1NvPRfPQ2PtxptWiNFZReA
+created: '2023-03-08T05:22:20.671363+00:00'
+modified: '2023-03-08T05:22:54.494137+00:00'
+pattern: true

@@ -1,0 +1,143 @@
+composition:
+  _name: Navigation
+  _id: 1cde46e5-3e3e-49b0-b158-49548c4a0c66
+  type: navigationLinks
+  slots:
+    links:
+      - _id: 1ca43711-080e-4da8-aa2a-429c1c8ed1ef
+        type: navigationItem
+        parameters:
+          link:
+            type: link
+            value: /
+          title:
+            type: text
+            value: Home
+      - _id: 0bbd6741-1b25-414c-8446-1d9a0738d578
+        type: navigationMenu
+        slots:
+          left:
+            - _id: 44c01aad-9b7e-4b3f-ae10-2d7d741417ce
+              type: brandsList
+              parameters:
+                title:
+                  type: text
+                  value: Coffee Makers
+                parentCategory:
+                  type: select
+                  value: '23'
+            - _id: 0f553da3-2b37-4686-9046-f1da239fe49a
+              type: categoriesList
+              parameters:
+                title:
+                  type: text
+                  value: Coffee Makers
+                parentCategory:
+                  type: select
+                  value: '23'
+          right:
+            - _id: e883cab0-4a2d-4223-9498-de25079f83a6
+              type: productItem
+              parameters:
+                title:
+                  type: text
+                  value: Kosmic Coffee Unbreakable Pour Over Coffee Maker
+                product:
+                  type: salesforce-cc-product-selector
+                  value: '86'
+                styleType:
+                  type: select
+                  value: menu
+          bottom:
+            - _id: 647f8393-76ed-4f6b-8aad-236b73060ffa
+              type: navigationMenuLink
+              parameters:
+                ctaLink:
+                  type: link
+                  value: /shop/coffee-makers
+                ctaText:
+                  type: text
+                  value: SEE ALL
+        parameters:
+          link:
+            type: text
+            value: /shop/coffee-makers
+          title:
+            type: text
+            value: Coffee Makers
+          leftColumnsCount:
+            type: number
+            value: '1'
+      - _id: a16a2f63-443c-4554-a677-ac51db2207ff
+        type: navigationMenu
+        slots:
+          left:
+            - _id: 3ae8ba4e-679b-4380-a2a1-58960ee5fa84
+              type: brandsList
+              parameters:
+                title:
+                  type: text
+                  value: Beans
+                parentCategory:
+                  type: select
+                  value: '27'
+            - _id: e6d5b37e-e845-4772-8a81-d465211a6107
+              type: categoriesList
+              parameters:
+                title:
+                  type: text
+                  value: Beans
+                parentCategory:
+                  type: select
+                  value: '27'
+          right:
+            - _id: bad2f96c-0881-4533-a5fe-e6afc6868f1d
+              type: productItem
+              parameters:
+                title:
+                  type: text
+                  value: Light Roast Coffee
+                product:
+                  type: salesforce-cc-product-selector
+                  value: '80'
+                styleType:
+                  type: select
+                  value: menu
+          bottom:
+            - _id: afc7cb91-5e1f-411d-a008-89b70fdb042a
+              type: navigationMenuLink
+              parameters:
+                ctaLink:
+                  type: link
+                  value: /shop/beans
+                ctaText:
+                  type: text
+                  value: SEE ALL
+        parameters:
+          link:
+            type: text
+            value: /shop/beans
+          title:
+            type: text
+            value: Beans
+          leftColumnsCount:
+            type: number
+            value: '1'
+      - _id: 07c95454-930a-437a-a133-e3e7ea9fc363
+        type: navigationItem
+        parameters:
+          link:
+            type: link
+            value:
+              path: /articles
+              nodeId: 317f8345-1b8a-4520-99cf-1168988742a2
+              projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+          title:
+            type: text
+            value: Articles
+          styleType:
+            type: select
+            value: default
+created: '2023-03-05T02:09:22.856688+00:00'
+modified: '2023-03-09T23:29:27.162537+00:00'
+pattern: true

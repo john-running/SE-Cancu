@@ -1,0 +1,63 @@
+composition:
+  _name: Shopping Cart
+  _id: 403f170f-091f-4965-a016-d45cc50b6db2
+  type: shoppingCart
+  parameters:
+    title:
+      type: text
+      value: Your shopping cart contains ${LineItemsCount} items
+  slots:
+    cartTop:
+      - _id: 6276cb5c-a9eb-48a8-8a56-f0ab504b2faf
+        type: $localization
+        slots:
+          localized:
+            - _id: fad58d4b-6dfd-412a-bd61-57aaec845e64
+              type: alert
+              parameters:
+                icon:
+                  type: select
+                  value: CheckCircleIcon
+                text:
+                  type: text
+                  value: Spedizione gratuita fino al 30 febbraio
+                type:
+                  type: select
+                  value: Success
+                locale:
+                  type: localeSelect
+                  value: it-it
+                ctaLink:
+                  type: text
+                  value: /products
+                ctaTitle:
+                  type: text
+                  value: Saperne di più
+    cartBottom:
+      - _id: 3355b7c3-56e7-45d2-82a8-4c19b54d0aed
+        type: $localization
+        slots:
+          localized:
+            - _id: 98e7942c-db4c-48e5-9308-5c8391a67a89
+              type: cartPromotion
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    Enjoy your new Specialty Coffee Maker by sampling our finest
+                    International Beans!
+                title:
+                  type: text
+                  value: 20% International Bean Bundle
+                locale:
+                  type: localeSelect
+                  value: en-us
+                ctaLink:
+                  type: text
+                  value: /products/bean
+                ctaTitle:
+                  type: text
+                  value: Bean Bundle
+created: '2023-03-05T02:09:26.574654+00:00'
+modified: '2023-03-09T23:28:32.366557+00:00'
+pattern: true

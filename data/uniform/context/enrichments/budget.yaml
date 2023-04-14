@@ -1,0 +1,11 @@
+id: budget
+name: Budget Level
+sortOrder: 1
+cap: 100
+values:
+  - id: '1'
+    value: budget
+  - id: '3'
+    value: luxury
+  - id: '2'
+    value: mid-market

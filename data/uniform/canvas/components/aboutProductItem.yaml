@@ -1,0 +1,31 @@
+id: aboutProductItem
+name: About Product Item
+icon: align-left
+parameters:
+  - id: direction
+    name: Direction
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Left
+          value: Left
+        - text: Right
+          value: Right
+      required: true
+  - id: entry
+    name: Entry
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: false
+      allowedContentTypes:
+        aboutProduct:
+          id: aboutProduct
+          name: About Product Item
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:02.855595+00:00'
+updated: '2023-03-09T15:20:49.836998+00:00'

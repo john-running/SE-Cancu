@@ -1,0 +1,20 @@
+id: contactSidebar
+name: Contact Sidebar
+icon: sidebar-open
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:07.393615+00:00'
+updated: '2023-03-09T15:20:50.161412+00:00'

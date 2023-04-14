@@ -1,0 +1,55 @@
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: pageMetaTitle
+    name: Page Meta Title
+    type: text
+    typeConfig:
+      required: true
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    typeConfig:
+      required: false
+      multiline: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - hero
+      - callToAction
+      - featuredProducts
+      - currentCategoryProductList
+      - productImageGallery
+      - productInfo
+      - productDescription
+      - relatedProducts
+      - $personalization
+      - $test
+      - $localization
+      - productDeal
+      - shoppingCart
+      - accordion
+      - featuredCallout
+      - signUpNewsletter
+      - profileComponent
+      - shoppingHistory
+      - spotlightList
+      - favorites
+      - sectionTwoColumns
+      - addToCart
+      - aboutProduct
+      - article
+      - navigationLinks
+      - articlesList
+      - repeatingBlock
+      - productContainer
+      - productPromo
+      - productCollection
+      - algolia-instantSearch
+    inheritAllowedComponents: false
+canBeComposition: true
+created: '2023-03-05T02:09:11.9738+00:00'
+updated: '2023-03-09T15:20:50.952327+00:00'

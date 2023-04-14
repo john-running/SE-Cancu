@@ -1,0 +1,92 @@
+id: spotlightList
+name: Related Articles
+icon: layout-list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: desktopColumnSize
+    name: Desktop Column Size
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: '6'
+          value: '6'
+        - text: '4'
+          value: '4'
+        - text: '3'
+          value: '3'
+        - text: '2'
+          value: '2'
+        - text: '1'
+          value: '1'
+  - id: tabletColumnSize
+    name: Tablet Column Size
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: '6'
+          value: '6'
+        - text: '4'
+          value: '4'
+        - text: '3'
+          value: '3'
+        - text: '2'
+          value: '2'
+        - text: '1'
+          value: '1'
+  - id: mobileColumnSize
+    name: Mobile Column Size
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: '3'
+          value: '3'
+        - text: '2'
+          value: '2'
+        - text: '1'
+          value: '1'
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: paddingBottom
+    name: Padding Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+useTeamPermissions: true
+slots:
+  - id: spotlightItem
+    name: Articles
+    allowedComponents:
+      - spotlightItem
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:15.108416+00:00'
+updated: '2023-03-09T15:20:51.785742+00:00'

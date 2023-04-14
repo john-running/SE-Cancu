@@ -1,0 +1,58 @@
+composition:
+  _name: PDP (template)
+  _id: e82e18c5-b0f5-4313-8486-05a96b74cbbc
+  _slug: pdp
+  type: productDetailPage
+  slots:
+    content:
+      - _id: 28137a9e-ac23-4724-89dc-41e4536c4903
+        type: sectionTwoColumns
+        slots:
+          leftContent:
+            - _id: 229b689b-2e0d-4318-a1c9-b1be7b5909d6
+              type: productInfo
+          rightContent:
+            - _id: c27416c6-d71f-459d-b000-1e74703a6fce
+              type: productImageGallery
+              parameters:
+                imagesPosition:
+                  type: select
+                  value: bottom
+        parameters:
+          hasBottomBorder:
+            type: checkbox
+            value: true
+          verticalAlignment:
+            type: select
+            value: items-start
+          leftContentColumns:
+            type: select
+            value: '4'
+          rightContentColumns:
+            type: select
+            value: '7'
+      - _id: 84174d51-afac-4877-b107-cfdefc3ccfad
+        type: addToCart
+      - _id: da49923b-cdb3-4adc-97dc-b713a7054a04
+        type: productDescription
+        parameters:
+          title:
+            type: text
+            value: About this product
+      - _id: b03f1fa2-e06e-458b-901c-ebccee4cd80a
+        type: relatedProducts
+        parameters:
+          title:
+            type: text
+            value: More products like this
+          products:
+            type: algolia-recommend
+            value:
+              index_name: Products
+              recommendOptions:
+                objectId: '81'
+                threshold: 30
+                maxRecommendations: 5
+created: '2023-03-08T00:07:16.672287+00:00'
+modified: '2023-03-09T01:19:46.079912+00:00'
+pattern: false

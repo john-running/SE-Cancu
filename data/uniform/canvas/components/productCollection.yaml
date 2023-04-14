@@ -1,0 +1,53 @@
+id: productCollection
+name: Product Collection
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1666549952/JavaDrip/component%20thumbnails/featured-products_wzadc5.png
+parameters:
+  - id: products
+    name: Products
+    type: algolia-query
+    helpText: ''
+    typeConfig:
+      facets:
+        brand: Brand
+        topCategory: Type
+        subcategories: Category
+      allowedIndex: Products
+      titleFieldName: name
+      imageUrlFieldName: ''
+      subTitleFieldName: brand
+      level3TitleFieldName: topCategory
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: subTitle
+    name: Sub Title
+    type: text
+    typeConfig:
+      required: false
+      multiline: true
+  - id: addToCart
+    name: Display the Add To Cart button
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+  - id: seeMoreTitle
+    name: See More Title
+    type: text
+    typeConfig: null
+  - id: seeMoreUrl
+    name: See More Link
+    type: link
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-09T02:37:34.282351+00:00'
+updated: '2023-03-09T15:20:51.041879+00:00'
+variants:
+  - id: dark
+    name: Dark

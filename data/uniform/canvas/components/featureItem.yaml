@@ -1,0 +1,40 @@
+id: featureItem
+name: Feature Item
+icon: danger
+parameters:
+  - id: icon
+    name: Icon
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      defaultoptions: ''
+  - id: text
+    name: Text
+    type: text
+    typeConfig:
+      required: true
+      multiline: true
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: link
+    name: Link
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: textLink
+    name: Text Link
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:09.31135+00:00'
+updated: '2023-03-09T15:20:50.370805+00:00'

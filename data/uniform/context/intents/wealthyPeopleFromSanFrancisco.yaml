@@ -1,0 +1,9 @@
+id: wealthyPeopleFromSanFrancisco
+name: Wealthy people from San Francisco
+description: ''
+type: 0
+inputs:
+  - dim: luxuryCampaign
+    sign: +
+  - dim: sanFrancisco
+    sign: +

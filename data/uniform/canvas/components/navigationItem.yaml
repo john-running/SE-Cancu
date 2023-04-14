@@ -1,0 +1,32 @@
+id: navigationItem
+name: Navigation Item
+icon: link
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: link
+    name: Link
+    type: link
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: styleType
+    name: Style Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Default
+          value: default
+        - text: Menu
+          value: menu
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:10.927643+00:00'
+updated: '2023-03-09T15:20:50.736657+00:00'

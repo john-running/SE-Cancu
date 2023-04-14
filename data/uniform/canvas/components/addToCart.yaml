@@ -1,0 +1,10 @@
+id: addToCart
+name: Add to cart
+icon: >-
+  https://t4.ftcdn.net/jpg/00/65/30/29/360_F_65302966_TQeVHo9p9ChkKL255pyj0tbiZJJlq5YA.jpg
+parameters: []
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:03.383313+00:00'
+updated: '2023-03-09T15:20:49.966741+00:00'

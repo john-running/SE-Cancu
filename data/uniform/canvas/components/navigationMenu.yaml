@@ -1,0 +1,51 @@
+id: navigationMenu
+name: Navigation Menu
+icon: ereader
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: link
+    name: Link
+    type: text
+    helpText: Ability to highlight menu on current page
+    typeConfig:
+      required: true
+  - id: leftColumnsCount
+    name: Left Columns Count
+    type: number
+    helpText: ''
+    typeConfig:
+      max: '3'
+      min: '1'
+      required: true
+useTeamPermissions: true
+slots:
+  - id: left
+    name: Left
+    allowedComponents:
+      - brandsList
+      - categoriesList
+      - navigationItem
+    inheritAllowedComponents: false
+  - id: right
+    name: Right
+    maxComponents: 1
+    allowedComponents:
+      - productItem
+      - callToAction
+    inheritAllowedComponents: false
+  - id: bottom
+    name: Bottom
+    maxComponents: 3
+    minComponents: 0
+    allowedComponents:
+      - navigationMenuLink
+    inheritAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:11.454095+00:00'
+updated: '2023-03-09T15:20:51.0267+00:00'

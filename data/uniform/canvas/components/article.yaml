@@ -1,0 +1,52 @@
+id: article
+name: Article
+icon: template
+parameters:
+  - id: articleContent
+    name: Article Content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        article:
+          id: article
+          name: Article
+  - id: metaTitle
+    name: Meta Title (override)
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: metaDescription
+    name: Meta Description (override)
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '3'
+  - id: ogImage
+    name: og:image (Override)
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - articleContent
+      - spotlightList
+      - $personalization
+      - $localization
+      - $test
+    inheritAllowedComponents: false
+defaults:
+  type: article
+  slots:
+    content:
+      - type: articleContent
+titleParameter: articleContent
+canBeComposition: true
+created: '2023-03-05T02:09:04.004672+00:00'
+updated: '2023-03-09T15:20:49.569386+00:00'

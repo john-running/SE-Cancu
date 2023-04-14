@@ -1,0 +1,66 @@
+id: hero
+name: Hero
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1666550101/JavaDrip/component%20thumbnails/hero_tn0rpx.png
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '4'
+  - id: backgroundImage
+    name: Background Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: '16:9'
+      widths: 300,500,800
+      multiSelect: false
+      defaultoptions: ''
+  - id: buttonUrl
+    name: Link
+    type: link
+    helpText: ''
+    typeConfig: null
+  - id: buttonCopy
+    name: Link Text
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: titleAi
+    name: Title (AI generated)
+    type: ai-generated-text
+    helpText: ''
+    typeConfig:
+      buttonText: Generate title
+      promptText: >-
+        Make "{title}" into a more call to action to target "{$pzCrit}" in 20
+        characters or less and make it about coffee
+  - id: subtitleAi
+    name: Subtitle (AI generated)
+    type: ai-generated-text
+    helpText: ''
+    typeConfig:
+      buttonText: Generate subtitle
+      promptText: >-
+        Rewrite "{subtitle}" about coffee to target "{$pzCrit}" in 140
+        characters or less
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:10.365893+00:00'
+updated: '2023-03-09T15:20:50.888495+00:00'
+variants:
+  - id: boxed
+    name: Boxed
+  - id: fullWidth
+    name: Full Width

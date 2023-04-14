@@ -1,0 +1,36 @@
+id: profileComponent
+name: Profile Component
+icon: home-alt
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: termsTitle
+    name: Terms Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: termsDescription
+    name: Terms Description
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: termsLink
+    name: Terms Link
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots:
+  - id: items
+    name: items
+    allowedComponents:
+      - popUp
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:14.863676+00:00'
+updated: '2023-03-09T15:20:51.402429+00:00'

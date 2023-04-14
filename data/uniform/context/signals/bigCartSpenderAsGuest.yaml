@@ -1,0 +1,28 @@
+id: bigCartSpenderAsGuest
+name: Big Cart Spender as Guest
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: cartBigSpender
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 'true'
+    - key: cartActive
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 'true'
+    - key: cartGuest
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 'true'
+dur: p
+description: ''
+str: 50

@@ -1,0 +1,38 @@
+id: globalTemplate
+name: Global Template
+icon: inbox
+parameters:
+  - id: theme
+    name: Theme
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: javadrip
+          value: javadrip
+        - text: mrsbean
+          value: mrsbean
+      required: true
+useTeamPermissions: true
+slots:
+  - id: header
+    name: Header
+    allowedComponents:
+      - topNavigation
+      - banner
+      - $personalization
+    inheritAllowedComponents: false
+  - id: footer
+    name: Footer
+    maxComponents: 1
+    allowedComponents:
+      - footer
+    inheritAllowedComponents: false
+  - id: shoppingBag
+    name: Shopping Bag
+    allowedComponents:
+      - shoppingCart
+    inheritAllowedComponents: false
+canBeComposition: true
+created: '2023-03-05T02:09:10.129423+00:00'
+updated: '2023-03-09T15:20:50.858288+00:00'

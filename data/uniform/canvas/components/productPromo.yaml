@@ -1,0 +1,53 @@
+id: productPromo
+name: Product Promo
+icon: danger
+parameters:
+  - id: product
+    name: Product
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        product:
+          id: product
+          name: Product
+  - id: buttonCopy
+    name: Button Copy
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: None
+          value: None
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+  - id: paddingBotom
+    name: Padding Botom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: None
+          value: None
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:14.587981+00:00'
+updated: '2023-03-09T15:20:51.366584+00:00'

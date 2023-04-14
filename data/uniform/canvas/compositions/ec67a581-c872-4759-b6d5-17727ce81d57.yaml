@@ -1,0 +1,182 @@
+composition:
+  _name: How to Resources
+  _id: ec67a581-c872-4759-b6d5-17727ce81d57
+  type: sectionTwoColumns
+  parameters:
+    backgroundType:
+      type: select
+      value: White
+    hideBottomBorder:
+      type: checkbox
+      value: true
+    mobileItemsOrder:
+      type: select
+      value: order-last
+    verticalAlignment:
+      type: select
+      value: items-start
+    leftContentColumns:
+      type: select
+      value: '4'
+    rightContentColumns:
+      type: select
+      value: '7'
+  slots:
+    leftContent:
+      - _id: 928649af-624c-4906-8207-66e507a7b7f1
+        type: callToAction
+    rightContent:
+      - _id: 7a3f625a-52c8-435c-af0e-a9b4fa253b3f
+        type: featuresGrid
+        slots:
+          content:
+            - _id: 9cb17db6-2ae1-4b23-989a-bfb4691f08b8
+              type: featureItem
+              parameters:
+                icon:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1651073696/JavaDrip/icons/Group_139_us8zw5.png
+                      ratio: '16:9'
+                      width: 167
+                      format: png
+                      height: 146
+                      widths: 300,500
+                      caption: ''
+                      options: q_auto,f_auto
+                      version: 1651073696
+                      publicId: JavaDrip/icons/Group_139_us8zw5
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/icons/Group_139_us8zw5.png
+                      resourceType: image
+                      transformation: ''
+                link:
+                  type: text
+                  value: >-
+                    https://javadrip.coffee/articles/the-right-bean-for-pour-over-coffee-makers
+                text:
+                  type: text
+                  value: >
+                    Is it just a cup of coffee or is there more than meets the
+                    eye? See what kind of coffee is best for your taste buds.
+                title:
+                  type: text
+                  value: Picking the right bean
+                textLink:
+                  type: text
+                  value: READ »
+            - _id: 9497f47c-ebd3-4551-ae8f-17334d21e7c9
+              type: featureItem
+              parameters:
+                icon:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1651073696/JavaDrip/icons/Group_fdxtts.png
+                      ratio: '16:9'
+                      width: 157
+                      format: png
+                      height: 188
+                      widths: 300,500
+                      caption: ''
+                      options: q_auto,f_auto
+                      version: 1651073696
+                      publicId: JavaDrip/icons/Group_fdxtts
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/icons/Group_fdxtts.png
+                      resourceType: image
+                      transformation: ''
+                link:
+                  type: text
+                  value: >-
+                    https://javadrip.coffee/articles/is-the-slow-drip-coffee-maker-for-you
+                text:
+                  type: text
+                  value: >
+                    Is the slow drip actually making better coffee? Or is it
+                    just some hipster thing that doesn’t really matter?
+                title:
+                  type: text
+                  value: What’s up with the slow drip?
+                textLink:
+                  type: text
+                  value: READ »
+            - _id: 6f26fc75-5647-457a-ba47-27daed3a116e
+              type: featureItem
+              parameters:
+                icon:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1651073696/JavaDrip/icons/Vector_y3oyay.png
+                      ratio: '16:9'
+                      width: 120
+                      format: png
+                      height: 168
+                      widths: 300,500
+                      caption: ''
+                      options: q_auto,f_auto
+                      version: 1651073696
+                      publicId: JavaDrip/icons/Vector_y3oyay
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/icons/Vector_y3oyay.png
+                      resourceType: image
+                      transformation: ''
+                link:
+                  type: text
+                  value: >-
+                    https://javadrip.coffee/articles/how-to-get-the-perfect-grind-for-your-beans
+                text:
+                  type: text
+                  value: >
+                    There are many ways to grind a coffee bean - is one way
+                    better than another? Experts weigh in.
+                title:
+                  type: text
+                  value: Grinding beans
+                textLink:
+                  type: text
+                  value: READ »
+            - _id: 97c25d82-2726-4a5c-a522-b66f99c03575
+              type: featureItem
+              parameters:
+                icon:
+                  type: cloudinary-media-selector
+                  value:
+                    - alt: ''
+                      url: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/v1651073696/JavaDrip/icons/Group_141_ceghmj.png
+                      ratio: '16:9'
+                      width: 163
+                      format: png
+                      height: 175
+                      widths: 300,500
+                      caption: ''
+                      options: q_auto,f_auto
+                      version: 1651073696
+                      publicId: JavaDrip/icons/Group_141_ceghmj
+                      previewUrl: >-
+                        https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/icons/Group_141_ceghmj.png
+                      resourceType: image
+                      transformation: ''
+                link:
+                  type: text
+                  value: https://javadrip.coffee/articles/how-to-brew-a-propper-cuppa
+                text:
+                  type: text
+                  value: >
+                    Tea is awesome, but only if its properly brewed and made
+                    according to the type of tea it is. Don’t mess it up.
+                title:
+                  type: text
+                  value: A propper cuppa
+                textLink:
+                  type: text
+                  value: READ »
+created: '2022-12-01T00:18:33.25106+00:00'
+modified: '2022-12-01T00:18:33.25106+00:00'
+pattern: true

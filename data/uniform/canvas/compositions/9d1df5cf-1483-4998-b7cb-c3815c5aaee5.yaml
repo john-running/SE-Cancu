@@ -1,0 +1,9 @@
+composition:
+  _name: Test 3
+  _id: 9d1df5cf-1483-4998-b7cb-c3815c5aaee5
+  _slug: test-3
+  type: page
+  parameters: {}
+created: '2023-03-08T00:07:21.337939+00:00'
+modified: '2023-03-08T00:07:21.337939+00:00'
+pattern: false

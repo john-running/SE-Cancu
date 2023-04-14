@@ -1,0 +1,27 @@
+id: brandsList
+name: Brands List
+icon: layout-list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: parentCategory
+    name: Parent Category
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Coffee Makers
+          value: '23'
+        - text: Beans
+          value: '27'
+      required: true
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:05.248472+00:00'
+updated: '2023-03-09T15:20:50.100763+00:00'

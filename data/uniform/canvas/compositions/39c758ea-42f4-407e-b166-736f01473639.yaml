@@ -1,0 +1,152 @@
+composition:
+  _name: Coffee Makers
+  _id: 39c758ea-42f4-407e-b166-736f01473639
+  _slug: /coffee-makers
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Search
+  slots:
+    content:
+      - _id: ecf2e6d9-6778-4afe-bdaa-44dca6e545df
+        type: hero
+        variant: boxed
+        parameters:
+          title:
+            type: text
+            value: Best Coffee Makers!
+          backgroundImage:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/fetch/v1659509710/https://cdn11.bigcommerce.com/s-w47by5ayi6/products/113/images/386/coffee-4334647__480__52365.1651843938.1280.1280.jpg
+                uuid: a34fe320-0800-42d1-a2ad-9eb311d319b3
+                ratio: '16:9'
+                width: '720'
+                format: jpg
+                height: '480'
+                widths: 300,500,800
+                caption: ''
+                options: ''
+                version: 1659509710
+                publicId: >-
+                  https://cdn11.bigcommerce.com/s-w47by5ayi6/products/113/images/386/coffee-4334647__480__52365.1651843938.1280.1280.jpg
+                createdAt: '2022-08-03T06:55:11Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/fetch/q_auto,f_auto,w_150/https://cdn11.bigcommerce.com/s-w47by5ayi6/products/113/images/386/coffee-4334647__480__52365.1651843938.1280.1280.jpg
+                resourceType: image
+                transformation: ''
+                globalImageOptions: q_auto,f_auto
+      - _id: 6fdb2a98-d7ac-4cdf-8269-92edb16ef4b9
+        type: algolia-instantSearch
+        slots:
+          widgets:
+            - _id: ec86c776-268a-47b2-8577-193741157cf3
+              type: sectionTwoColumns
+              slots:
+                leftContent:
+                  - _id: d3cf1782-9a5f-41c3-805c-663eb542e1ab
+                    type: refinementListWrapper
+                    slots:
+                      content:
+                        - _id: f07ee694-0c06-409d-b83c-1c888a105300
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Category
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: subcategories
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                        - _id: ec555c59-c6b7-4822-876c-919a071076b6
+                          type: algolia-refinementList
+                          parameters:
+                            title:
+                              type: text
+                              value: Brand
+                            isExpanded:
+                              type: checkbox
+                              value: true
+                            refinementListParams:
+                              type: algolia-components
+                              value:
+                                refinementListProps:
+                                  limit: 5
+                                  operator: and
+                                  showMore: true
+                                  attribute: brand
+                                  searchable: false
+                                  allowedIndex: Products
+                                  showMoreLimit: 10
+                                  escapeFacetValues: true
+                rightContent:
+                  - _id: 6a43cb48-ba68-4162-b3d8-00b80ef3dc6b
+                    type: algolia-searchBox
+                    parameters:
+                      searchBoxParams:
+                        type: algolia-components
+                        value:
+                          searchBoxProps:
+                            placeholder: search coffee makers
+                            searchAsYouType: true
+                  - _id: d6a4dece-2e02-40b6-ba0f-f7ebf9e03128
+                    type: algolia-hits
+                    slots:
+                      hitComponent:
+                        - _id: dddbe8bf-a280-4de1-beac-4f001fa15896
+                          type: algolia-hit
+              parameters:
+                mobileItemsOrder:
+                  type: select
+                  value: order-first
+                verticalAlignment:
+                  type: select
+                  value: items-start
+                leftContentColumns:
+                  type: select
+                  value: '4'
+                rightContentColumns:
+                  type: select
+                  value: '8'
+            - _id: c6eadc10-90f6-4e1a-9d52-b68b5bdce699
+              type: algolia-pagination
+              parameters:
+                pageSize:
+                  type: number
+                  value: 20
+                paginationParams:
+                  type: algolia-components
+                  value:
+                    paginationProps:
+                      padding: 1
+                      showLast: true
+                      showNext: true
+                      showFirst: true
+                      showPrevious: true
+        parameters:
+          categoryFilter:
+            type: select
+            value: Coffee Makers
+          instantSearchParams:
+            type: algolia-components
+            value:
+              instantSearchProps:
+                indexName: Products
+                stalledSearchDelay: 200
+created: '2023-03-09T01:57:26.039504+00:00'
+modified: '2023-03-09T02:24:32.325887+00:00'
+pattern: false

@@ -1,0 +1,22 @@
+id: enterprise
+name: Enterprise
+cap: 100
+crit:
+  op: '&'
+  type: G
+  clauses:
+    - key: clb-com-met-empr
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: 50K-100K
+    - key: clb-com-met-mcap
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: Very High
+dur: p
+description: ''
+str: 50

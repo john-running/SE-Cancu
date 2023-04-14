@@ -1,0 +1,21 @@
+id: repeatingBlock
+name: Reviews
+icon: view-list
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: reviews
+    name: Reviews
+    allowedComponents:
+      - $loop
+      - review
+    inheritAllowedComponents: false
+titleParameter: heading
+canBeComposition: false
+created: '2023-03-05T02:09:15.949485+00:00'
+updated: '2023-03-09T15:20:51.476258+00:00'

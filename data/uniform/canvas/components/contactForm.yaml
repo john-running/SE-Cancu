@@ -1,0 +1,45 @@
+id: contactForm
+name: Contact Form
+icon: format-justify
+parameters:
+  - id: submitButtonText
+    name: Submit Button Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: successfulSubmitText
+    name: Successful Submit Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: errorSubmitText
+    name: Error Submit Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: successfulSubmitImage
+    name: Successful Submit Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+  - id: errorSubmitImage
+    name: Error Submit Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      multiSelect: false
+      defaultoptions: ''
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:07.134721+00:00'
+updated: '2023-03-09T15:20:50.1885+00:00'

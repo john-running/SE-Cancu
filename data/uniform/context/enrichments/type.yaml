@@ -1,0 +1,13 @@
+id: type
+name: Product Type
+sortOrder: 2
+cap: 100
+values:
+  - id: '1'
+    value: coffee-maker
+    sortOrder: 1
+  - id: '2'
+    value: beans
+    sortOrder: 2
+  - id: '3'
+    value: accessories

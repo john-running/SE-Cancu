@@ -1,0 +1,15 @@
+id: articleContent
+name: Article Content
+icon: format-text
+parameters:
+  - id: articleTags
+    name: Article Tags (override)
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:04.311691+00:00'
+updated: '2023-03-09T15:20:49.679529+00:00'

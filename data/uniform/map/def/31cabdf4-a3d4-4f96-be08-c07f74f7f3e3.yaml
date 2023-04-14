@@ -1,0 +1,4 @@
+id: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+name: Map
+baseUrl: https://uniform-commercelayer-poc.vercel.app/us/en-us
+default: true

@@ -1,0 +1,15 @@
+id: navigationLinks
+name: Navigation Links
+icon: drive
+parameters: []
+useTeamPermissions: true
+slots:
+  - id: links
+    name: Links
+    allowedComponents:
+      - navigationItem
+      - navigationMenu
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-05T02:09:11.208141+00:00'
+updated: '2023-03-09T15:20:50.785271+00:00'

@@ -1,0 +1,49 @@
+id: landingPage
+name: Landing Page
+icon: file-document
+parameters:
+  - id: pageMetaTitle
+    name: Page Meta Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - callToAction
+      - currentCategoryProductList
+      - featuredProducts
+      - hero
+      - productDeal
+      - productDescription
+      - productImageGallery
+      - productInfo
+      - relatedProducts
+      - shoppingCart
+      - $personalization
+      - $test
+      - $localization
+      - navigationLinks
+      - accordion
+      - signUpNewsletter
+      - featuredCallout
+      - aboutProduct
+      - spotlightList
+      - divider
+      - sectionTwoColumns
+      - popUp
+      - repeatingBlock
+      - richText
+    inheritAllowedComponents: false
+canBeComposition: true
+created: '2023-03-05T02:09:10.621614+00:00'
+updated: '2023-03-09T15:20:50.693507+00:00'

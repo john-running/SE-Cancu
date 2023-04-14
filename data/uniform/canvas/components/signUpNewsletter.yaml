@@ -1,0 +1,46 @@
+id: signUpNewsletter
+name: Sign Up Newsletter
+icon: ereader
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: backgroundImage
+    name: Background Image
+    type: cloudinary-media-selector
+    helpText: ''
+    typeConfig:
+      ratio: ''
+      widths: ''
+      defaultoptions: ''
+  - id: submitButtonText
+    name: Submit Button Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: successfulSubmitText
+    name: Successful Submit Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: errorSubmitText
+    name: Error Submit Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:17.436677+00:00'
+updated: '2023-03-09T15:20:51.746696+00:00'

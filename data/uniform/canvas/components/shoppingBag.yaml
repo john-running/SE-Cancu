@@ -1,0 +1,14 @@
+id: shoppingBag
+name: Shopping Bag
+icon: shopping-bag
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:16.703011+00:00'
+updated: '2023-03-09T15:20:51.615048+00:00'

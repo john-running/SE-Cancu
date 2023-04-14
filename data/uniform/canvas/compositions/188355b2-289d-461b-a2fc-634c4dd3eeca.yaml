@@ -1,0 +1,176 @@
+composition:
+  _name: Global
+  _id: 188355b2-289d-461b-a2fc-634c4dd3eeca
+  _slug: global
+  type: globalTemplate
+  parameters:
+    theme:
+      type: select
+      value: javadrip
+  slots:
+    footer:
+      - _id: a05c9364-a311-4bec-af46-bf0ff488a4cf
+        type: footer
+        parameters:
+          logo:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1670109605/JavaDrip/logos/javadrip-logo-white_scojno.png
+                ratio: ''
+                width: '190'
+                format: png
+                height: '46'
+                widths: ''
+                caption: ''
+                options: ''
+                version: 1670109605
+                publicId: JavaDrip/logos/javadrip-logo-white_scojno
+                createdAt: '2022-12-03T23:20:05Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/logos/javadrip-logo-white_scojno.png
+                resourceType: image
+                transformation: ''
+                globalImageOptions: q_auto,f_auto
+          subline:
+            type: text
+            value: JavaDrip is a ficticious website for demo purposes only.
+    header:
+      - _id: f7fc1d61-aa6b-4642-81c1-68fb1e969904
+        type: $personalization
+        slots:
+          pz:
+            - _id: 4b5afe87-15f9-4e0c-aa49-9b0ffe96ed3d
+              type: banner
+              parameters:
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: bigCartSpenderAsGuest
+                        r: 0
+                        op: '>'
+                    name: 'Banner: We announced a new product!'
+                ctaText:
+                  type: text
+                  value: /products
+                ctaTitle:
+                  type: text
+                  value: Learn more
+                longTitle:
+                  type: text
+                  value: >-
+                    🤑 We love big spenders! Spend $100 more and get coffee bean
+                    subscription for 3 months!
+                shortTitle:
+                  type: text
+                  value: >-
+                    Spend $100 more and get coffee bean subscription for 3
+                    months!
+        parameters:
+          trackingEventName:
+            type: text
+            value: Global Banner
+      - _id: 9e935bd6-3e08-4b2f-8dde-65f7b5931eb0
+        type: topNavigation
+        slots:
+          topNav:
+            - _id: d8c01bed-8c36-4bec-93b2-6632540f54cd
+              type: navigationItem
+              parameters:
+                link:
+                  type: link
+                  value:
+                    path: /
+                    nodeId: b33ed442-70f8-4355-bb8d-704b2b7ec999
+                    projectMapId: da7f7598-f910-41fb-8d8d-8154703b9137
+                title:
+                  type: text
+                  value: Home
+                styleType:
+                  type: select
+                  value: default
+            - _id: 4744c3c6-b8f8-46b2-94fd-2c2e85d5cd87
+              type: navigationItem
+              parameters:
+                link:
+                  type: link
+                  value:
+                    path: /search
+                    nodeId: ea1ef15d-80da-484c-aded-15bca38505db
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                title:
+                  type: text
+                  value: Shop All
+            - _id: 74bb4bec-7628-48da-b73e-12414121fa0a
+              type: navigationItem
+              parameters:
+                link:
+                  type: link
+                  value:
+                    path: /shop/coffee-makers
+                    nodeId: ef4f9aed-6439-4a2d-b038-96b643711c9e
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                title:
+                  type: text
+                  value: Coffee-Makers
+            - _id: 73c467e7-110c-4887-a9f4-5d105a676a0a
+              type: navigationItem
+              parameters:
+                link:
+                  type: link
+                  value:
+                    path: /shop/coffee-beans
+                    nodeId: 67a2b191-f5bb-478d-b8cb-6ed06de7cd5c
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                title:
+                  type: text
+                  value: Beans
+            - _id: d0d9beba-2ee4-4569-8f30-7cb884bc61d5
+              type: navigationItem
+              parameters:
+                link:
+                  type: link
+                  value:
+                    path: /articles
+                    nodeId: 317f8345-1b8a-4520-99cf-1168988742a2
+                    projectMapId: 31cabdf4-a3d4-4f96-be08-c07f74f7f3e3
+                title:
+                  type: text
+                  value: Articles
+                styleType:
+                  type: select
+                  value: default
+        parameters:
+          logo:
+            type: cloudinary-media-selector
+            value:
+              - alt: ''
+                url: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/v1670109605/JavaDrip/logos/javadrip-logo-black_c9kqcz.png
+                ratio: ''
+                width: '209'
+                format: png
+                height: '50'
+                widths: ''
+                caption: ''
+                options: ''
+                version: 1670109605
+                publicId: JavaDrip/logos/javadrip-logo-black_c9kqcz
+                createdAt: '2022-12-03T23:20:05Z'
+                previewUrl: >-
+                  https://res.cloudinary.com/uniformdev/image/upload/q_auto:low,f_auto,w_150/JavaDrip/logos/javadrip-logo-black_c9kqcz.png
+                resourceType: image
+                transformation: ''
+                globalImageOptions: q_auto,f_auto
+          showFavorites:
+            type: checkbox
+            value: true
+    shoppingBag:
+      - _id: 51aa1f30-54c8-48f4-ac9f-0ae27da5b56e
+        type: shoppingCart
+        _pattern: 403f170f-091f-4965-a016-d45cc50b6db2
+created: '2023-03-05T02:09:20.158567+00:00'
+modified: '2023-03-09T22:30:41.139505+00:00'
+pattern: false

@@ -1,0 +1,31 @@
+id: productItem
+name: Product Item
+icon: image-text
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: styleType
+    name: Style Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Default
+          value: default
+        - text: Menu
+          value: menu
+  - id: product
+    name: Featured Product
+    type: salesforce-cc-product-selector
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:14.31329+00:00'
+updated: '2023-03-09T15:20:51.331594+00:00'

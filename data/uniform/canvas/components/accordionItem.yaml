@@ -1,0 +1,21 @@
+id: accordionItem
+name: Accordion Item
+icon: arrow-down-r
+parameters:
+  - id: content
+    name: Content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        faqBlock:
+          id: faqBlock
+          name: FAQ Block
+useTeamPermissions: true
+slots: []
+titleParameter: content
+canBeComposition: false
+created: '2023-03-08T05:26:27.079578+00:00'
+updated: '2023-03-09T15:20:49.254854+00:00'

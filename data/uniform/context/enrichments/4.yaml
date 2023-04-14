@@ -1,0 +1,13 @@
+id: '4'
+name: Bean Type
+sortOrder: 3
+cap: 100
+values:
+  - id: '1'
+    value: arabica
+  - id: '2'
+    value: excelsa
+  - id: '3'
+    value: liberica
+  - id: '4'
+    value: robusta

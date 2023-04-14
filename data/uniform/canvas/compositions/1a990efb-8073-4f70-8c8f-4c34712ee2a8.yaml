@@ -1,0 +1,16 @@
+composition:
+  _name: Products
+  _id: 1a990efb-8073-4f70-8c8f-4c34712ee2a8
+  _slug: products
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Products
+  slots:
+    content:
+      - _id: 60e2c010-4fa3-4f23-806e-382bd5726e99
+        type: productContainer
+created: '2023-01-28T20:41:57.426181+00:00'
+modified: '2023-01-28T21:38:15.812063+00:00'
+pattern: false

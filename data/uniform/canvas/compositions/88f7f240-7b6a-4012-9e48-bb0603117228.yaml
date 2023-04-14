@@ -1,0 +1,12 @@
+composition:
+  _name: JavaDrip Speacialty
+  _id: 88f7f240-7b6a-4012-9e48-bb0603117228
+  _slug: javadrip-speacialty
+  type: productDetailPage
+  parameters: {}
+  slots:
+    content:
+      - type: productDetailPageContainer
+created: '2023-03-09T21:50:07.380466+00:00'
+modified: '2023-03-09T21:50:07.380466+00:00'
+pattern: false

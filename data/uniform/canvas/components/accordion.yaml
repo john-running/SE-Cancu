@@ -1,0 +1,26 @@
+id: accordion
+name: Accordion
+icon: https://static.thenounproject.com/png/1814255-200.png
+parameters:
+  - id: content
+    name: Content
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        faq:
+          id: faq
+          name: FAQ
+useTeamPermissions: true
+slots:
+  - id: items
+    name: Items
+    allowedComponents:
+      - accordionItem
+    inheritAllowedComponents: false
+titleParameter: content
+canBeComposition: false
+created: '2023-03-05T02:09:03.136211+00:00'
+updated: '2023-03-09T15:20:48.779427+00:00'

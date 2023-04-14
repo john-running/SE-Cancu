@@ -1,0 +1,26 @@
+id: articlesList
+name: Articles List
+icon: layout-list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: articles
+    name: Articles
+    type: contentfulQuery
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        article:
+          id: article
+          name: Article
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-05T02:09:04.633741+00:00'
+updated: '2023-03-09T15:20:49.720072+00:00'

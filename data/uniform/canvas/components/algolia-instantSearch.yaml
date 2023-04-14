@@ -1,0 +1,38 @@
+id: algolia-instantSearch
+name: Instant Search
+icon: search-found
+parameters:
+  - id: instantSearchParams
+    name: Instant Search Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Instant Search
+  - id: categoryFilter
+    name: Category Filter
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Coffee Beans
+          value: Coffee Beans
+        - text: Coffee Makers
+          value: Coffee Makers
+        - text: Accessories
+          value: Accessories
+useTeamPermissions: true
+slots:
+  - id: widgets
+    name: Widgets
+    allowedComponents:
+      - algolia-searchBox
+      - algolia-refinementList
+      - algolia-hits
+      - algolia-pagination
+      - algolia-index
+      - algolia-basicComponents
+      - sectionTwoColumns
+    inheritAllowedComponents: false
+canBeComposition: false
+created: '2023-03-08T23:36:33.944264+00:00'
+updated: '2023-03-09T15:20:49.316361+00:00'

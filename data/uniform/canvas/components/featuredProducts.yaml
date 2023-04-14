@@ -1,0 +1,77 @@
+id: featuredProducts
+name: Featured Products
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1666549952/JavaDrip/component%20thumbnails/featured-products_wzadc5.png
+parameters:
+  - id: category
+    name: Category
+    type: contentfulEntry
+    helpText: ''
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        taxon:
+          id: taxon
+          name: Taxon
+  - id: productDisplayLimit
+    name: Product display limit
+    type: number
+    helpText: ''
+    typeConfig:
+      max: '12'
+      min: '3'
+  - id: sortBy
+    name: Sort By
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Availability
+          value: availability
+        - text: Price
+          value: price
+  - id: sortOrder
+    name: Sort Order
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Ascending
+          value: asc
+        - text: Descending
+          value: desc
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+  - id: subTitle
+    name: Sub Title
+    type: text
+    typeConfig:
+      required: false
+      multiline: true
+  - id: addToCart
+    name: Display the Add To Cart button
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+  - id: seeMoreTitle
+    name: See More Title
+    type: text
+    typeConfig: null
+  - id: seeMoreUrl
+    name: See More Link
+    type: link
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-03-05T02:09:09.026219+00:00'
+updated: '2023-03-09T15:20:50.503628+00:00'
+variants:
+  - id: dark
+    name: Dark

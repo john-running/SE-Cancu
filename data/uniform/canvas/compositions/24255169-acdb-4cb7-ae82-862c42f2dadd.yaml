@@ -1,0 +1,16 @@
+composition:
+  _name: Shopping Cart
+  _id: 24255169-acdb-4cb7-ae82-862c42f2dadd
+  _slug: /cart
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Shopping Cart
+  slots:
+    content:
+      - _id: f01de523-78a9-4734-99bb-003cab37993d
+        type: shoppingCart
+created: '2022-12-01T00:18:32.416456+00:00'
+modified: '2022-12-01T00:18:32.416456+00:00'
+pattern: false
